@@ -8,8 +8,18 @@
     <meta name="description" content="一、基岩版服务端选择
 1.小游戏服务端
 Nukkitx：
-官网链接：https://cloudburstmc.org/articles/?mobile=2
-github：https://github.com/CloudburstMC/Nuk">
+官网链接：点击前往
+github：点击前往
+2.生存服服务端
+pnx：
+官网链接：点击前往
+github：点击前往
+
+二、安装环境
+ 1pkg i openjdk-17 -y
+
+
+三">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -431,15 +441,17 @@ github：https://github.com/CloudburstMC/Nuk">
                 <p>一、基岩版服务端选择</p>
 <p>1.小游戏服务端</p>
 <p>Nukkitx：</p>
-<p>官网链接：<a target="_blank" rel="noopener" href="https://cloudburstmc.org/articles/?mobile=2">https://cloudburstmc.org/articles/?mobile=2</a></p>
-<p>github：<a target="_blank" rel="noopener" href="https://github.com/CloudburstMC/Nukkit">https://github.com/CloudburstMC/Nukkit</a></p>
+<p>官网链接：<a target="_blank" rel="noopener" href="https://cloudburstmc.org/articles/?mobile=2%22%22">点击前往</a></p>
+<p>github：<a target="_blank" rel="noopener" href="https://github.com/CloudburstMC/Nukkit%22%22">点击前往</a></p>
 <p>2.生存服服务端</p>
 <p>pnx：</p>
-<p>官网链接：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&target=http://www.powernukkitx.cn/">https://www.mcbbs.net/plugin.php?id=link_redirect&amp;target=http%3A%2F%2Fwww.powernukkitx.cn%2F</a></p>
-<p>github：<a target="_blank" rel="noopener" href="https://github.com/PowerNukkitX/PowerNukkitX">https://github.com/PowerNukkitX/PowerNukkitX</a></p>
+<p>官网链接：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&target=http://www.powernukkitx.cn/%22%22">点击前往</a></p>
+<p>github：<a target="_blank" rel="noopener" href="https://github.com/PowerNukkitX/PowerNukkitX%22%22">点击前往</a></p>
+<hr>
 <p>二、安装环境</p>
  <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg i openjdk-17 -y</span><br></pre></td></tr></table></figure>
 
+<hr>
 <p>三、正式开始搭建</p>
 <p>1.在手机根目录下新建文件夹(名称随意)</p>
 <p>手机根目录如下：</p>
@@ -452,6 +464,7 @@ github：https://github.com/CloudburstMC/Nuk">
 <p>termux指令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /storage/emulated/0/你创建的文件夹名称</span><br></pre></td></tr></table></figure>
 
+<hr>
 <p>四、安装小游戏服务端</p>
 <p>1.打开termux输入：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">安装小游戏服务端指令&#123;基岩版版本为1.17.40&#125;</span><br><span class="line"></span><br><span class="line"> wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>
@@ -461,7 +474,7 @@ github：https://github.com/CloudburstMC/Nuk">
 
 <p>3.启动服务端指令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar nukkit-1.0-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>
-
+<hr>
 <p>五、安装生存服服务端</p>
 <p>1.在手机根目录下新建文件夹(名称随意)</p>
 <p>手机根目录如下：</p>
@@ -483,6 +496,7 @@ github：https://github.com/CloudburstMC/Nuk">
 <p>指令：</p>
 <figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">java -Dfile.encoding=UTF-8 \</span><br><span class="line">-Djansi.passthrough=<span class="literal">true</span> \</span><br><span class="line">-Dterminal.ansi=<span class="literal">true</span> \</span><br><span class="line">-XX:+UnlockExperimentalVMOptions \</span><br><span class="line">-XX:+UseG1GC \</span><br><span class="line">-XX:+UseStringDeduplication \</span><br><span class="line">-XX:+EnableJVMCI \</span><br><span class="line">--module-path=./libs/truffle-api-22.2.0.jar:./libs/graal-sdk-22.2.0.jar: \</span><br><span class="line">--add-opens java.base/java.lang=ALL-UNNAMED \</span><br><span class="line">--add-opens java.base/java.io=ALL-UNNAMED \</span><br><span class="line">-<span class="built_in">cp</span> ./powernukkitx.jar:./libs/* \</span><br><span class="line">cn.nukkit.Nukkit</span><br></pre></td></tr></table></figure>
 
+<hr>
 <p>六、服务器优化和配置</p>
 <p>自行百度解决</p>
 
