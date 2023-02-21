@@ -7,12 +7,12 @@
     <meta name="keywords" content="termux远程收发短信, jsishsjsj的博客">
     <meta name="description" content="⚠️⚠️⚠️注：教程转自b站up主Janwrice(up已同意转载)
 up主链接：点击前往
-视频链接： 点击前往
+up主视频链接：点击前往
 
 0x01 安装所需应用：
-Termux-API（若是MIUI系统请关掉MIUI优化！）：
+若是MIUI系统请关掉MIUI优化！
 Termux内API安装命令：
-​">
+​ 1​pk​g ins">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -427,14 +427,14 @@ Termux内API安装命令：
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>⚠️⚠️⚠️注：教程转自b站up主Janwrice(up已同意转载)</p>
+                <p><strong>⚠️⚠️⚠️注：教程转自b站up主Janwrice(up已同意转载)</strong></p>
 <p>up主链接：<a target="_blank" rel="noopener" href="https://b23.tv/g5y9EaQ%22%22">点击前往</a></p>
-<p>视频链接： <a target="_blank" rel="noopener" href="https://b23.tv/UpJiP5r%22%22">点击前往</a></p>
+<p>up主视频链接：<a target="_blank" rel="noopener" href="https://b23.tv/UpJiP5r%22%22%22%22">点击前往</a></p>
 <hr>
 <p>0x01 安装所需应用：</p>
-<p>Termux-API（若是MIUI系统请关掉MIUI优化！）：</p>
+<p><strong>若是MIUI系统请关掉MIUI优化！</strong></p>
 <p>Termux内API安装命令：</p>
-<p>​<br> <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">​pk​g</span> <span class="string">install</span> <span class="string">termux-api</span> <span class="string">-y</span></span><br></pre></td></tr></table></figure></p>
+<p>​<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​pk​g install termux-api -y</span><br></pre></td></tr></table></figure></p>
 <hr>
 <p>0x02 为Termux及Termux API授予相应权限</p>
 <p>请观看up主视频</p>
@@ -449,9 +449,7 @@ Termux内API安装命令：
 <p>Termux查看短信：</p>
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">termux-sms-list</span></span><br></pre></td></tr></table></figure>
 
-<p>Termux发送短信：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">termux-sms-send</span> <span class="string">-n</span> <span class="string">&#x27;目标电话&#x27;</span> <span class="string">短信内容</span></span><br></pre></td></tr></table></figure>
-
+<p>Termux发送短信： <code>   termux-sms-send -n &#39;目标电话&#39; 短信内容 </code></p>
 <hr>
 <p>0x05 使用ssh远程连接Termux</p>
 <p>Termux内ssh安装命令：</p>
@@ -459,9 +457,7 @@ Termux内API安装命令：
 
 
 
-<p>对ssh设置密码：passwd</p>
-<p>这里注意填写密码时你是看不到密码的</p>
-<p>如果忘了设置的密码，再运行一遍passwd即可</p>
+<p><strong>对ssh设置密码：passwd<br>这里注意填写密码时你是看不到密码的<br>如果忘了设置的密码，再运行一遍passwd即可</strong></p>
 <p>启用ssh：</p>
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">sshd</span></span><br></pre></td></tr></table></figure>
 
@@ -478,9 +474,7 @@ Termux内API安装命令：
 <p>连接ssh：</p>
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ssh</span> <span class="string">目标IP</span> <span class="string">-p</span> <span class="string">目标端口</span></span><br></pre></td></tr></table></figure>
 
-
-
-<p>这里的端口通常是8022，如果无法确定端口，请使用nmap查找：</p>
+<p><strong>这里的端口通常是8022，如果无法确定端口，请使用nmap查找：</strong></p>
 <p>安装nmap：</p>
  <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">nmap</span> <span class="string">-y</span></span><br></pre></td></tr></table></figure>
 
@@ -488,11 +482,9 @@ Termux内API安装命令：
 <p>0x06 使用cpolar对ssh进行内网穿透：</p>
 <p>官方教程：<a target="_blank" rel="noopener" href="https://www.cpolar.com/blog/how-to-install-cpolar-under-android-termux-hyper-terminal%22%22">点击前往</a></p>
 <p>对于简单的ssh，使用免费版方案即可</p>
-<p>注意使用cpolar时它的端口号会不定时更改</p>
-<p>可以到cpolar的官网上登录帐号并在状态条目中查看当前端口！</p>
 <hr>
 <p>0x07 内网穿透也可以参考本站文章</p>
-<p>⚠️⚠️⚠️教程转自b站up主Janwrice(up已同意转载)</p>
+<p><strong>⚠️⚠️⚠️教程转自b站up主Janwrice(up已同意转载)</strong></p>
 <p>up主链接：<a target="_blank" rel="noopener" href="https://b23.tv/g5y9EaQ%22%22">点击前往</a></p>
 <p>视频链接： <a target="_blank" rel="noopener" href="https://b23.tv/UpJiP5r%22%22">点击前往</a></p>
 

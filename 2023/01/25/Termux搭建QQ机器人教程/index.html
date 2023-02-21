@@ -5,12 +5,12 @@
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="termux搭建QQ机器人教程, jsishsjsj的博客">
-    <meta name="description" content="一、首先声明：⚠️⚠️⚠️1.搞QQ机器人容易被腾讯封控封号2.QQ被封后本人概不负责，后果自负。3.阅读上述内容后，并明确知道后果后，那么我们开始教程。
+    <meta name="description" content="一、首先声明：⚠️⚠️⚠️1.搞QQ机器人容易被腾讯封控封号。2.QQ被封后本人概不负责，后果自负。
 
 二、QQ机器人框架所用的机器人框架为Mirai。
 
 三、教程开始
-1.下载质感文件">
+1.下载质感文件（可以访问termux目录，并编辑其相关内容）：点击前">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -425,41 +425,45 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、首先声明：⚠️⚠️⚠️<br>1.搞QQ机器人容易被腾讯封控封号<br>2.QQ被封后本人概不负责，后果自负。<br>3.阅读上述内容后，并明确知道后果后，那么我们开始教程。</p>
+                <p><strong>一、首先声明：⚠️⚠️⚠️<br>1.搞QQ机器人容易被腾讯封控封号。<br>2.QQ被封后本人概不负责，后果自负。</strong></p>
 <hr>
 <p>二、QQ机器人框架<br>所用的机器人框架为Mirai。</p>
 <hr>
 <p>三、教程开始</p>
 <p>1.下载质感文件（可以访问termux目录，并编辑其相关内容）：<a target="_blank" rel="noopener" href="https://github.com/zhanghai/MaterialFiles%22%22">点击前往</a></p>
 <p>2.打开termux输入：</p>
-<p>pkg i openjdk-17 -y</p>
-<p>pkg i wget -y</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   pkg i openjdk-17 -y</span><br><span class="line"></span><br><span class="line">pkg i wget -y</span><br></pre></td></tr></table></figure>
+
 <p>3.使用刚才下载的质感文件，或在termux根目录下输入：</p>
-<p>mkdir mcl</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir mcl</span><br></pre></td></tr></table></figure>
+
 <p>(如用质感文件在termux根目录下创建文件夹名称最好为mcl)</p>
 <p>4.进入创建好的文件夹内：</p>
-<p>cd mcl</p>
-<p>5.进入文件夹后输入：</p>
-<p>wget <a target="_blank" rel="noopener" href="https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip">https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip</a></p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd mcl</span><br></pre></td></tr></table></figure>
+
+<p>5.进入文件夹后输入↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip</span><br></pre></td></tr></table></figure>
+
 <p>6.解压下载好的zip文件，输入：</p>
-<p>unzip mcl-2.1.2.zip</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip mcl-2.1.2.zip</span><br></pre></td></tr></table></figure>
+
 <p>7.给予权限，输入：</p>
-<p>chmod +x mcl</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x mcl</span><br></pre></td></tr></table></figure>
+
 <p>8.运行mcl，输入：</p>
-<p>.&#x2F;mcl</p>
-<p>需要注意的是，第一次登录会需要验证，在Android设备上你可以安装</p>
-<p>滑动验证助手(运行登陆时会给出下载链接)</p>
-<p>从报错中找到网址（一般在最后一段）按软件指示操作即可。最后把验证完的码贴回Termux即可完成认证。</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./mcl</span><br></pre></td></tr></table></figure>
+
+<p><strong>注意：第一次登录会需要验证，在Android设备上你可以安装<br>滑动验证助手(运行登陆时会给出下载链接)<br>从报错中找到网址（一般在最后一段）按软件指示操作即可。最后把验证完的码贴回Termux即可完成认证。</strong></p>
 <hr>
 <p>四、QQ机器人插件安装及下载</p>
 <p>1.下载插件请前往：<a target="_blank" rel="noopener" href="https://mirai.mamoe.net/category/11/%E6%8F%92%E4%BB%B6%E5%8F%91%E5%B8%83%22%22">点击前往</a></p>
 <p>2.安装插件</p>
-<p>大多数插件是直接放到plugins文件夹内即可运行的。具体的插件配置看插件文档。</p>
+<p>大多数插件是直接放到<code>plugins</code>文件夹内即可运行的。具体的插件配置看插件文档。</p>
 <hr>
 <p>五、官方文档</p>
 <p><a target="_blank" rel="noopener" href="https://github.com/iTXTech/mirai-console-loader/blob/master/cli.md%22%22">点击前往</a></p>
 <hr>
-<p>再次声明：！！！⚠️⚠️⚠️<br>1.搞QQ机器人容易被腾讯封控封号(也就是封号)。<br>2.QQ被封后本人概不负责，后果自负。</p>
+<p><strong>再次声明：！！！⚠️⚠️⚠️<br>1.搞QQ机器人容易被腾讯封号。<br>2.QQ被封后本人概不负责，后果自负。</strong></p>
 
                 
             </div>
