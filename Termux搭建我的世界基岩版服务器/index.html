@@ -4,15 +4,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="termux远程收发短信">
-    <meta name="description" content="⚠️⚠️⚠️注：教程转自b站up主Janwrice(up已同意转载)
-up主链接：点击前往
-up主视频链接：点击前往
+    <meta name="keywords" content="termux搭建我的世界基岩版服务器">
+    <meta name="description" content="一、基岩版服务端选择
+1.小游戏服务端
+Nukkitx：
+官网链接：点击前往
+github：点击前往
+2.生存服服务端
+pnx：
+官网链接：点击前往
+github：点击前往
 
-0x01 安装所需应用：
-若是MIUI系统请关掉MIUI优化！
-Termux内API安装命令：
-​ 1​pk​g ins">
+二、安装环境
+ 1pkg i openjdk-17 -y
+
+
+三">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -24,7 +31,7 @@ Termux内API安装命令：
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>termux远程收发短信 | jsishsjsj的博客</title>
+    <title>termux搭建我的世界基岩版服务器 | jsishsjsj的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -348,12 +355,12 @@ Termux内API安装命令：
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/11.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">termux远程收发短信</h1>
+                    <h1 class="description center-align post-title">termux搭建我的世界基岩版服务器</h1>
                 </div>
             </div>
         </div>
@@ -381,8 +388,8 @@ Termux内API安装命令：
                                 <span class="chip bg-color">termux</span>
                             </a>
                         
-                            <a href="/tags/%E7%9F%AD%E4%BF%A1/">
-                                <span class="chip bg-color">短信</span>
+                            <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">
+                                <span class="chip bg-color">我的世界</span>
                             </a>
                         
                     </div>
@@ -406,7 +413,7 @@ Termux内API安装命令：
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-02-03
+                    2023-01-26
                 </div>
                 
 
@@ -427,66 +434,67 @@ Termux内API安装命令：
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p><strong>⚠️⚠️⚠️注：教程转自b站up主Janwrice(up已同意转载)</strong></p>
-<p>up主链接：<a target="_blank" rel="noopener" href="https://b23.tv/g5y9EaQ%22%22">点击前往</a></p>
-<p>up主视频链接：<a target="_blank" rel="noopener" href="https://b23.tv/UpJiP5r%22%22%22%22">点击前往</a></p>
+                <p>一、基岩版服务端选择</p>
+<p>1.小游戏服务端</p>
+<p>Nukkitx：</p>
+<p>官网链接：<a target="_blank" rel="noopener" href="https://cloudburstmc.org/articles/?mobile=2%22%22">点击前往</a></p>
+<p>github：<a target="_blank" rel="noopener" href="https://github.com/CloudburstMC/Nukkit%22%22">点击前往</a></p>
+<p>2.生存服服务端</p>
+<p>pnx：</p>
+<p>官网链接：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&target=http://www.powernukkitx.cn/%22%22">点击前往</a></p>
+<p>github：<a target="_blank" rel="noopener" href="https://github.com/PowerNukkitX/PowerNukkitX%22%22">点击前往</a></p>
 <hr>
-<p>0x01 安装所需应用：</p>
-<p><strong>若是MIUI系统请关掉MIUI优化！</strong></p>
-<p>Termux内API安装命令：</p>
-<p>​<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​pk​g install termux-api -y</span><br></pre></td></tr></table></figure></p>
-<hr>
-<p>0x02 为Termux及Termux API授予相应权限</p>
-<p>请观看up主视频</p>
-<p>视频链接：<a target="_blank" rel="noopener" href="https://b23.tv/UpJiP5r%22%22">点击前往</a></p>
-<hr>
-<p>0x03 为Termux换源</p>
-<p>Termux清华源换源命令：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">sed</span> <span class="string">-i</span> <span class="string">&#x27;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@&#x27;</span> <span class="string">$PREFIX/etc/apt/sources.list</span> <span class="string">apt</span> <span class="string">update</span> <span class="string">&amp;&amp;</span> <span class="string">apt</span> <span class="string">upgrade</span></span><br></pre></td></tr></table></figure>
+<p>二、安装环境</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg i openjdk-17 -y</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p>0x04 使用Termux收发短信</p>
-<p>Termux查看短信：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">termux-sms-list</span></span><br></pre></td></tr></table></figure>
+<p>三、正式开始搭建</p>
+<p>1.在手机根目录下新建文件夹(名称随意)</p>
+<p>手机根目录如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/storage/emulated/0/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
-<p>Termux发送短信： <code>   termux-sms-send -n &#39;目标电话&#39; 短信内容 </code></p>
-<hr>
-<p>0x05 使用ssh远程连接Termux</p>
-<p>Termux内ssh安装命令：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">openssh</span> <span class="string">-y</span></span><br></pre></td></tr></table></figure>
+<p>2.打开termux进入你刚才创建好的文件夹内</p>
+<p>路径如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/storage/emulated/0/你创建的文件夹名称</span><br></pre></td></tr></table></figure>
 
-
-
-<p><strong>对ssh设置密码：passwd<br>这里注意填写密码时你是看不到密码的<br>如果忘了设置的密码，再运行一遍passwd即可</strong></p>
-<p>启用ssh：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">sshd</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>安装ifconfig：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">net-tools</span></span><br></pre></td></tr></table></figure>
-
-<p>查看当前内网IP地址：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ifconfig</span></span><br></pre></td></tr></table></figure>
-
-
-
-<p>连接ssh：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ssh</span> <span class="string">目标IP</span> <span class="string">-p</span> <span class="string">目标端口</span></span><br></pre></td></tr></table></figure>
-
-<p><strong>这里的端口通常是8022，如果无法确定端口，请使用nmap查找：</strong></p>
-<p>安装nmap：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">nmap</span> <span class="string">-y</span></span><br></pre></td></tr></table></figure>
+<p>termux指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /storage/emulated/0/你创建的文件夹名称</span><br></pre></td></tr></table></figure>
 
 <hr>
-<p>0x06 使用cpolar对ssh进行内网穿透：</p>
-<p>官方教程：<a target="_blank" rel="noopener" href="https://www.cpolar.com/blog/how-to-install-cpolar-under-android-termux-hyper-terminal%22%22">点击前往</a></p>
-<p>对于简单的ssh，使用免费版方案即可</p>
+<p>四、安装小游戏服务端</p>
+<p>1.打开termux输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">安装小游戏服务端指令&#123;基岩版版本为1.17.40&#125;</span><br><span class="line"></span><br><span class="line"> wget https://ci.opencollab.dev/job/NukkitX/job/Nukkit/job/master/lastSuccessfulBuild/artifact/target/nukkit-1.0-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>
+
+<p>2.给予文件夹权限：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x 你创建的文件夹名称</span><br></pre></td></tr></table></figure>
+
+<p>3.启动服务端指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -jar nukkit-1.0-SNAPSHOT.jar</span><br></pre></td></tr></table></figure>
 <hr>
-<p>0x07 内网穿透也可以参考本站文章</p>
-<p><strong>⚠️⚠️⚠️教程转自b站up主Janwrice(up已同意转载)</strong></p>
-<p>up主链接：<a target="_blank" rel="noopener" href="https://b23.tv/g5y9EaQ%22%22">点击前往</a></p>
-<p>视频链接： <a target="_blank" rel="noopener" href="https://b23.tv/UpJiP5r%22%22">点击前往</a></p>
+<p>五、安装生存服服务端</p>
+<p>1.在手机根目录下新建文件夹(名称随意)</p>
+<p>手机根目录如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">/storage/emulated/0/</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>2.打开termux进入你刚才创建好的文件夹内</p>
+<p>路径如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/storage/emulated/0/你创建的文件夹名称</span><br></pre></td></tr></table></figure>
+
+<p>termux指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /storage/emulated/0/你创建的文件夹名称</span><br></pre></td></tr></table></figure>
+
+<p>3.安装服务端指令</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/PowerNukkitX/PowerNukkitX/releases/download/1.19.50-r3/libs.tar.gz</span><br></pre></td></tr></table></figure>
+<p>下载完后解压并复制里面的内容到你创建的文件夹内，然后输入：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/PowerNukkitX/PowerNukkitX/releases/download/1.19.50-r3/powernukkitx.jar</span><br></pre></td></tr></table></figure>
+
+<p>4.启动服务端</p>
+<p>指令：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line">java -Dfile.encoding=UTF-8 \</span><br><span class="line">-Djansi.passthrough=true \</span><br><span class="line">-Dterminal.ansi=true \</span><br><span class="line">-XX:+UnlockExperimentalVMOptions \</span><br><span class="line">-XX:+UseG1GC \</span><br><span class="line">-XX:+UseStringDeduplication \</span><br><span class="line">-XX:+EnableJVMCI \</span><br><span class="line">--module-path=./libs/truffle-api-22.2.0.jar:./libs/graal-sdk-22.2.0.jar: \</span><br><span class="line">--add-opens java.base/java.lang=ALL-UNNAMED \</span><br><span class="line">--add-opens java.base/java.io=ALL-UNNAMED \</span><br><span class="line">-cp ./powernukkitx.jar:./libs/* \</span><br><span class="line">cn.nukkit.Nukkit</span><br></pre></td></tr></table></figure>
+
+<hr>
+<p>六、服务器优化和配置</p>
+<p>自行百度解决</p>
 
                 
             </div>
@@ -513,7 +521,7 @@ Termux内API安装命令：
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsishsjsj.github.io/year/02/03/termux%E8%BF%9C%E7%A8%8B%E6%94%B6%E5%8F%91%E7%9F%AD%E4%BF%A1/">https://jsishsjsj.github.io/year/02/03/termux%E8%BF%9C%E7%A8%8B%E6%94%B6%E5%8F%91%E7%9F%AD%E4%BF%A1/</a>
+                    <a href="https://jsishsjsj.github.io/Termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%9F%BA%E5%B2%A9%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/">https://jsishsjsj.github.io/Termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%9F%BA%E5%B2%A9%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -555,8 +563,8 @@ Termux内API安装命令：
                                     <span class="chip bg-color">termux</span>
                                 </a>
                             
-                                <a href="/tags/%E7%9F%AD%E4%BF%A1/">
-                                    <span class="chip bg-color">短信</span>
+                                <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">
+                                    <span class="chip bg-color">我的世界</span>
                                 </a>
                             
                         </div>
@@ -606,13 +614,13 @@ Termux内API安装命令：
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/year/02/05/termux%E8%8F%9C%E8%9B%8B/">
+                <a href="/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99%EF%BC%88%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%96%B0%EF%BC%89/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="termux菜蛋">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="宝藏网站（永久更新）">
                         
-                        <span class="card-title">termux菜蛋</span>
+                        <span class="card-title">宝藏网站（永久更新）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -623,14 +631,14 @@ Termux内API安装命令：
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-05
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-29
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Termux%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Termux教程
+                            <a href="/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/" class="post-category">
+                                    宝藏网站
                                 </a>
                             
                             
@@ -640,12 +648,8 @@ Termux内API安装命令：
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/termux/">
-                        <span class="chip bg-color">termux</span>
-                    </a>
-                    
-                    <a href="/tags/%E5%BD%A9%E8%9B%8B/">
-                        <span class="chip bg-color">彩蛋</span>
+                    <a href="/tags/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/">
+                        <span class="chip bg-color">宝藏网站</span>
                     </a>
                     
                 </div>
@@ -659,13 +663,13 @@ Termux内API安装命令：
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/year/02/01/termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CJava%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/">
+                <a href="/Termux%E6%90%AD%E5%BB%BAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E7%A8%8B/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/3.jpg" class="responsive-img" alt="termux搭建我的世界Java版服务器">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="termux搭建QQ机器人教程">
                         
-                        <span class="card-title">termux搭建我的世界Java版服务器</span>
+                        <span class="card-title">termux搭建QQ机器人教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -676,7 +680,7 @@ Termux内API安装命令：
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-01
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-25
                             </span>
                         <span class="publish-author">
                             
@@ -697,8 +701,8 @@ Termux内API安装命令：
                         <span class="chip bg-color">termux</span>
                     </a>
                     
-                    <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">
-                        <span class="chip bg-color">我的世界</span>
+                    <a href="/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+                        <span class="chip bg-color">QQ机器人</span>
                     </a>
                     
                 </div>
