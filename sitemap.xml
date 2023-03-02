@@ -121,7 +121,7 @@
 
   <url>
     <loc>http://example.com/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -129,56 +129,56 @@
   
   <url>
     <loc>http://example.com/tags/termux/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E5%BD%A9%E8%9B%8B/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E7%9F%AD%E4%BF%A1/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/tags/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -187,14 +187,14 @@
   
   <url>
     <loc>http://example.com/categories/Termux%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>http://example.com/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2023-03-01</lastmod>
+    <lastmod>2023-03-02</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
