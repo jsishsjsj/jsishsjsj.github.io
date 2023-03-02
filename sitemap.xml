@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jsishsjsj.github.io/movies/index.html</loc>
+    
+    <lastmod>2023-03-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
+    
+    <lastmod>2023-03-02</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jsishsjsj.github.io/tags/index.html</loc>
     
     <lastmod>2023-03-02</lastmod>
@@ -41,15 +59,6 @@
     <loc>https://jsishsjsj.github.io/about/index.html</loc>
     
     <lastmod>2023-03-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
