@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jsishsjsj.github.io/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99%EF%BC%88%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%96%B0%EF%BC%89/</loc>
+    
+    <lastmod>2023-03-03</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
     
     <lastmod>2023-03-03</lastmod>
@@ -111,15 +120,6 @@
   
   <url>
     <loc>https://jsishsjsj.github.io/termux%E8%8F%9C%E8%9B%8B/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99%EF%BC%88%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%96%B0%EF%BC%89/</loc>
     
     <lastmod>2023-03-01</lastmod>
     
