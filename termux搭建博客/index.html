@@ -4,16 +4,13 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="zerotermux搭建青龙面板">
-    <meta name="description" content="一、下载zerotermux
-下载链接：点击前往
+    <meta name="keywords" content="termux搭建博客, jsishsjsj的博客">
+    <meta name="description" content="一、博客框架
+博客框架为：hexo
 
-二、安装青龙面板
-1.打开zerotermux输入↓
- 1termux-setup-storage
-
-
-2.下载青龙控制面板恢复包下载链接：https://caiyun.139.com/m">
+二、搭建
+1.打开termux输入↓
+ 1234567891011121314pkg i nodejs -ypkg i git -ynpm install hexo-cli -ghexo init bl">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -25,7 +22,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>zerotermux搭建青龙面板 | jsishsjsj的博客</title>
+    <title>termux搭建博客 | jsishsjsj的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -371,12 +368,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/0.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('https://www.helloimg.com/images/2023/02/20/oFYvsv.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">zerotermux搭建青龙面板</h1>
+                    <h1 class="description center-align post-title">termux搭建博客</h1>
                 </div>
             </div>
         </div>
@@ -404,8 +401,8 @@
                                 <span class="chip bg-color">termux</span>
                             </a>
                         
-                            <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">
-                                <span class="chip bg-color">青龙面板</span>
+                            <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                <span class="chip bg-color">博客</span>
                             </a>
                         
                     </div>
@@ -429,7 +426,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-02-16
+                    2023-03-05
                 </div>
                 
 
@@ -450,35 +447,51 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、下载zerotermux</p>
-<p>下载链接：<a target="_blank" rel="noopener" href="https://od.ixcmstudio.cn/repository/main/ZeroTermux/%22%22">点击前往</a></p>
+                <p><strong>一、博客框架</strong></p>
+<p>博客框架为：<a target="_blank" rel="noopener" href="https://hexo.bootcss.com/">hexo</a></p>
 <hr>
-<p>二、安装青龙面板</p>
-<p>1.打开zerotermux输入↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">termux-setup-storage</span><br></pre></td></tr></table></figure>
-
-
-<p>2.下载青龙控制面板恢复包<br>下载链接：<a target="_blank" rel="noopener" href="https://caiyun.139.com/m/i?055CtcA6ykvrU">https://caiyun.139.com/m/i?055CtcA6ykvrU</a><br>访问码：<code>xakU</code><br><strong>下载<code>termux_alpine_ql_v2.12.2</code>即可</strong></p>
-<p>备用微云链接：<a target="_blank" rel="noopener" href="https://share.weiyun.com/RXo6aIrt">https://share.weiyun.com/RXo6aIrt</a></p>
-<p>3.把你下载好的恢复包导入内部存储&#x2F;xinhao&#x2F;data&#x2F;里面<br>[完整目录]如下↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">/storage/emulated/0/xinhao/data/</span><br></pre></td></tr></table></figure>
-
-<p><strong>注：没有data文件夹的自己建一个</strong></p>
-<p>4.返回zerotermux里面，左边侧滑找到<code>备份/恢复</code>，之后点进去之后选择恢复，选择你要回复的包</p>
-<p>5.切换到青龙面板容器：<br><code>侧滑-&gt;容器切换-&gt;选择刚刚恢复的容器名称-&gt;切换-&gt;需要重启</code></p>
+<p><strong>二、搭建</strong></p>
+<p>1.打开termux输入↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">pkg i nodejs -y</span><br><span class="line"></span><br><span class="line">pkg i git -y</span><br><span class="line"></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init blog</span><br><span class="line"></span><br><span class="line">cd blog</span><br><span class="line"></span><br><span class="line">npm i</span><br><span class="line"></span><br><span class="line">hexo s</span><br><span class="line">   </span><br></pre></td></tr></table></figure>
+<p><strong>输入完<code>hexo s</code>，即可通过<code>http://localhost:4000/</code>来访问。</strong></p>
 <hr>
-<p>三、启动青龙面板</p>
-<p>1.最后一步，我们需要执行青龙的安装程序ql.sh。输入以下命令</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./ql.sh</span><br></pre></td></tr></table></figure>
-<hr>
-<p>四、访问青龙面板</p>
-<p>打开浏览器输入以下地址↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">127.0.0.1:5700</span><br></pre></td></tr></table></figure>
-<hr>
-<p>五、抓包软件下载：↓</p>
-<p>小黄鸟：<a target="_blank" rel="noopener" href="https://down.suibacc.cn:2233/s_9IJGaGlqxj9Mw23vr3YMJg%22%22">点击下载</a></p>
-<p><img src="https://www.helloimg.com/images/2023/02/20/oFYvsv.jpg"></p>
+<p><strong>三、部署到github</strong></p>
+<p>1.注册github</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/">github官网</a></p>
+<p>2.创建仓库</p>
+<p>仓库名称为<code>你的github账户名.github.io</code></p>
+<p>3.安装配置ssh</p>
+<p>安装↓<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install openssh -y</span><br></pre></td></tr></table></figure><br>配置↓<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的github账户名&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;你注册github时的邮箱&quot;</span><br></pre></td></tr></table></figure></p>
+<p>4.创建ssh</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</span><br></pre></td></tr></table></figure>
+<p><strong>输入完成后连按三次回车键</strong></p>
+<p>5.在github上创建密钥并连接</p>
+<p><strong>在github首页上，点击自己的头像，点击下面的setting,再找到<code>_SSH and GPG keys_</code>,添加ssh key。</strong></p>
+<p>如图↓<br><img src="https://www.helloimg.com/images/2023/03/05/oaRAKR.png"></p>
+<p>在<code>Title</code>处随便填一个名字</p>
+<p>在<code>key</code>填ssh的密钥</p>
+<p>ssh密钥获取↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /data/data/com.termux/files/home/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+<p>复制出现的内容到<code>key</code>处，然后点击<code>Add SHH Key</code></p>
+<p>返回termux检查是否成功输入↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+<p><strong>注：如出现yes或no问题，填<code>yes</code>即可</strong></p>
+<p>出现↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+<p>即为成功</p>
+<p>在blog目录下找到_config.yml,翻到最后，修改为↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repo: git@github.com:你的github用户名/你的github账户名.github.io.git</span><br><span class="line"> branch: master  </span><br></pre></td></tr></table></figure>
+<p><strong>四、完成推送</strong></p>
+<p>1.安装插件↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
 
+<p>2.推送命令↓</p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+
+<p>3.访问地址↓</p>
+<p><code>https://你的github账户名.github.io</code></p>
+<p><strong>四、常见命令</strong></p>
+ <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">hexo help  #帮助</span><br><span class="line"></span><br><span class="line">hexo clean  #清除缓存和已生成的静态文件</span><br><span class="line"></span><br><span class="line">hexo new &quot;name&quot; # 新建文章 </span><br><span class="line"></span><br><span class="line">hexo new page &quot;name&quot; # 新建页面</span><br><span class="line"></span><br><span class="line">hexo g # 生成静态页面</span><br><span class="line"></span><br><span class="line">hexo s   #本地预览</span><br><span class="line"></span><br><span class="line">hexo d  #部署</span><br><span class="line"></span><br><span class="line">hexo g -d  #生成页面并部署</span><br></pre></td></tr></table></figure>
                 
             </div>
             <hr/>
@@ -504,7 +517,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</a>
+                    <a href="https://jsishsjsj.github.io/termux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">https://jsishsjsj.github.io/termux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -546,8 +559,8 @@
                                     <span class="chip bg-color">termux</span>
                                 </a>
                             
-                                <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">
-                                    <span class="chip bg-color">青龙面板</span>
+                                <a href="/tags/%E5%8D%9A%E5%AE%A2/">
+                                    <span class="chip bg-color">博客</span>
                                 </a>
                             
                         </div>
@@ -593,9 +606,10 @@
 <article id="prenext-posts" class="prev-next articles">
     <div class="row article-row">
         
-        <div class="article col s12 m6" data-aos="fade-up">
+        <div class="article col s12 m6" data-aos="fade-up" data-aos="fade-up">
             <div class="article-badge left-badge text-color">
-                <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
+                <i class="far fa-dot-circle"></i>&nbsp;本篇
+            </div>
             <div class="card">
                 <a href="/termux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
                     <div class="card-image">
@@ -612,9 +626,9 @@
                         
                     </div>
                     <div class="publish-info">
-                        <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-03-05
-                        </span>
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-05
+                            </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
@@ -627,6 +641,7 @@
                         </span>
                     </div>
                 </div>
+
                 
                 <div class="card-action article-tags">
                     
@@ -649,13 +664,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/termux%E8%8F%9C%E8%9B%8B/">
+                <a href="/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/18.jpg" class="responsive-img" alt="termux菜蛋">
+                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="zerotermux搭建青龙面板">
                         
-                        <span class="card-title">termux菜蛋</span>
+                        <span class="card-title">zerotermux搭建青龙面板</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -666,7 +681,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-05
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-16
                             </span>
                         <span class="publish-author">
                             
@@ -687,8 +702,8 @@
                         <span class="chip bg-color">termux</span>
                     </a>
                     
-                    <a href="/tags/%E5%BD%A9%E8%9B%8B/">
-                        <span class="chip bg-color">彩蛋</span>
+                    <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">
+                        <span class="chip bg-color">青龙面板</span>
                     </a>
                     
                 </div>

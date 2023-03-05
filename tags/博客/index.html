@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类, jsishsjsj的博客">
+    <meta name="keywords" content="标签: 博客, jsishsjsj的博客">
     <meta name="description" content="jsishsjsj的博客">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类 | jsishsjsj的博客</title>
+    <title>标签: 博客 | jsishsjsj的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -409,100 +409,141 @@
 
     
 
-<div id="category-cloud" class="container chip-container">
+<div id="tags" class="container chip-container">
     <div class="card">
         <div class="card-content">
             <div class="tag-title center-align">
-                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
+                <i class="fas fa-tags"></i>&nbsp;&nbsp;文章标签
             </div>
             <div class="tag-chips">
                 
                 
-                
-                <a href="/categories/Termux%E6%95%99%E7%A8%8B/" title="Termux教程: 8">
+                <a href="/tags/termux/" title="termux: 8">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F9EBEA;">Termux教程
+                            data-tagname="termux" style="background-color: #F9EBEA;">termux
                         <span class="tag-length">8</span>
                     </span>
                 </a>
                 
                 
-                <a href="/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/" title="宝藏网站: 1">
+                <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/" title="内网穿透: 1">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
-                            style="background-color: #F5EEF8;">宝藏网站
+                            data-tagname="内网穿透" style="background-color: #F5EEF8;">内网穿透
                         <span class="tag-length">1</span>
                     </span>
                 </a>
                 
+                
+                <a href="/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/" title="QQ机器人: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="QQ机器人" style="background-color: #D5F5E3;">QQ机器人
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/" title="我的世界: 2">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="我的世界" style="background-color: #E8F8F5;">我的世界
+                        <span class="tag-length">2</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%8D%9A%E5%AE%A2/" title="博客: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-active "
+                            data-tagname="博客" style="background-color: #FEF9E7;">博客
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%BD%A9%E8%9B%8B/" title="彩蛋: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="彩蛋" style="background-color: #F8F9F9;">彩蛋
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E7%9F%AD%E4%BF%A1/" title="短信: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="短信" style="background-color: #82E0AA;">短信
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" title="青龙面板: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="青龙面板" style="background-color: #D7BDE2;">青龙面板
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/" title="宝藏网站: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="宝藏网站" style="background-color: #A3E4D7;">宝藏网站
+                        <span class="tag-length">1</span>
+                    </span>
+                </a>
                 
             </div>
         </div>
     </div>
 </div>
 
-
-    
-    <style type="text/css">
-    #category-radar {
-        width: 100%;
-        height: 360px;
-    }
-</style>
-
-<div class="container" data-aos="fade-up">
-    <div class="card">
-        <div id="category-radar" class="card-content"></div>
-    </div>
-</div>
-
-<script type="text/javascript" src="/libs/echarts/echarts.min.js"></script>
-<script type="text/javascript">
-    let radarChart = echarts.init(document.getElementById('category-radar'));
-
     
 
-    let option = {
-        title: {
-            left: 'center',
-            text: '文章分类雷达图',
-            textStyle: {
-                fontWeight: 500,
-                fontSize: 22
-            }
-        },
-        tooltip: {},
-        radar: {
-            name: {
-                textStyle: {
-                    color: '#3C4858'
-                }
-            },
-            indicator: [{"name":"Termux教程","max":9},{"name":"宝藏网站","max":9}],
-            nameGap: 5,
-            center: ['50%','55%'],
-            radius: '66%'
-        },
-        series: [{
-            type: 'radar',
-            color: ['#3ecf8e'],
-            itemStyle: {normal: {areaStyle: {type: 'default'}}},
-            data : [
-                {
-                    value : [8,1],
-                    name : '文章分类数量'
-                }
-            ]
-        }]
-    };
-
-    radarChart.setOption(option);
-</script>
-
-    
-
+    <article id="articles" class="container articles">
+        <div class="row tags-posts">
+            
+            
+            <div class="article tag-post col s12 m6 l4" data-tags="termux, 博客" data-aos="fade-up">
+                <div class="card">
+                    <a href="/termux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/">
+                        <div class="card-image tag-image">
+                            
+                            <img src="https://www.helloimg.com/images/2023/02/20/oFYvsv.jpg" class="responsive-img" alt="termux搭建博客">
+                            
+                            <span class="card-title">termux搭建博客</span>
+                        </div>
+                    </a>
+                    <div class="card-content article-content">
+                        <div class="publish-info">
+                            <span class="publish-date">
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-05
+                            </span>
+                            <span class="publish-author">
+                                
+                                <i class="fas fa-bookmark fa-fw icon-category"></i>
+                                
+                                <a href="/categories/Termux%E6%95%99%E7%A8%8B/" class="post-category">
+                                Termux教程
+                                </a>
+                                
+                                
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+    </article>
 </main>
+
+
 
 
     <footer class="page-footer bg-color">

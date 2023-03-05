@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jsishsjsj.github.io/termux%E6%90%AD%E5%BB%BA%E5%8D%9A%E5%AE%A2/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jsishsjsj.github.io/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99%EF%BC%88%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%96%B0%EF%BC%89/</loc>
     
     <lastmod>2023-03-03</lastmod>
@@ -130,7 +139,7 @@
 
   <url>
     <loc>https://jsishsjsj.github.io/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
   </url>
@@ -138,56 +147,63 @@
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/termux/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/tags/%E5%8D%9A%E5%AE%A2/</loc>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/%E5%BD%A9%E8%9B%8B/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/%E7%9F%AD%E4%BF%A1/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/tags/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
@@ -196,14 +212,14 @@
   
   <url>
     <loc>https://jsishsjsj.github.io/categories/Termux%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
   
   <url>
     <loc>https://jsishsjsj.github.io/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/</loc>
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
   </url>
