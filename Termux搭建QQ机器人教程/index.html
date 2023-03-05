@@ -442,6 +442,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
@@ -454,26 +457,28 @@
 <p>三、教程开始</p>
 <p>1.下载质感文件（可以访问termux目录，并编辑其相关内容）：<a target="_blank" rel="noopener" href="https://github.com/zhanghai/MaterialFiles%22%22">点击前往</a></p>
 <p>2.打开termux输入：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">   pkg i openjdk-17 -y</span><br><span class="line"></span><br><span class="line">pkg i wget -y</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-json" data-language="json"><code class="language-json">pkg i openjdk<span class="token number">-17</span> -y
+
+pkg i wget -y<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
 <p>3.使用刚才下载的质感文件，或在termux根目录下输入：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">mkdir mcl</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">mkdir mcl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>(如用质感文件在termux根目录下创建文件夹名称最好为mcl)</p>
 <p>4.进入创建好的文件夹内：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd mcl</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">cd mcl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>5.进入文件夹后输入↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">wget https://github.com/iTXTech/mirai-console-loader/releases/download/v2.1.2/mcl-2.1.2.zip</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;github.com&#x2F;iTXTech&#x2F;mirai-console-loader&#x2F;releases&#x2F;download&#x2F;v2.1.2&#x2F;mcl-2.1.2.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>6.解压下载好的zip文件，输入：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">unzip mcl-2.1.2.zip</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">unzip mcl-2.1.2.zip<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>7.给予权限，输入：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">chmod +x mcl</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">chmod +x mcl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>8.运行mcl，输入：</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">./mcl</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">.&#x2F;mcl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><strong>注意：第一次登录会需要验证，在Android设备上你可以安装<br>滑动验证助手(运行登陆时会给出下载链接)<br>从报错中找到网址（一般在最后一段）按软件指示操作即可。最后把验证完的码贴回Termux即可完成认证。</strong></p>
 <hr>
@@ -715,6 +720,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->

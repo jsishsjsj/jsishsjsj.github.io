@@ -2,7 +2,52 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://jsishsjsj.github.io/termux%E8%8F%9C%E8%9B%8B/</loc>
+    <loc>https://jsishsjsj.github.io/Termux%E6%90%AD%E5%BB%BAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/termux%E8%BF%9C%E7%A8%8B%E6%94%B6%E5%8F%91%E7%9F%AD%E4%BF%A1/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/Termux%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CJava%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
+    
+    <lastmod>2023-03-05</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/Termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%9F%BA%E5%B2%A9%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
     
     <lastmod>2023-03-05</lastmod>
     
@@ -20,16 +65,16 @@
   </url>
   
   <url>
-    <loc>https://jsishsjsj.github.io/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99%EF%BC%88%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%96%B0%EF%BC%89/</loc>
+    <loc>https://jsishsjsj.github.io/termux%E8%8F%9C%E8%9B%8B/</loc>
     
-    <lastmod>2023-03-03</lastmod>
+    <lastmod>2023-03-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
   </url>
   
   <url>
-    <loc>https://jsishsjsj.github.io/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/</loc>
+    <loc>https://jsishsjsj.github.io/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99%EF%BC%88%E6%B0%B8%E4%B9%85%E6%9B%B4%E6%96%B0%EF%BC%89/</loc>
     
     <lastmod>2023-03-03</lastmod>
     
@@ -86,51 +131,6 @@
     <loc>https://jsishsjsj.github.io/about/index.html</loc>
     
     <lastmod>2023-03-02</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/termux%E8%BF%9C%E7%A8%8B%E6%94%B6%E5%8F%91%E7%9F%AD%E4%BF%A1/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/Termux%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/Termux%E6%90%AD%E5%BB%BAQQ%E6%9C%BA%E5%99%A8%E4%BA%BA%E6%95%99%E7%A8%8B/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8CJava%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/Termux%E6%90%AD%E5%BB%BA%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C%E5%9F%BA%E5%B2%A9%E7%89%88%E6%9C%8D%E5%8A%A1%E5%99%A8/</loc>
-    
-    <lastmod>2023-03-01</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>

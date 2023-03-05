@@ -10,7 +10,17 @@
 
 二、搭建
 1.打开termux输入↓
- 1234567891011121314pkg i nodejs -ypkg i git -ynpm install hexo-cli -ghexo init bl">
+ pkg i nodejs -y
+
+pkg i git -y
+
+npm install hexo-cli -g
+
+hexo init blog
+
+cd blog
+
+">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -442,6 +452,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
@@ -452,7 +465,20 @@
 <hr>
 <p><strong>二、搭建</strong></p>
 <p>1.打开termux输入↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">pkg i nodejs -y</span><br><span class="line"></span><br><span class="line">pkg i git -y</span><br><span class="line"></span><br><span class="line">npm install hexo-cli -g</span><br><span class="line"></span><br><span class="line">hexo init blog</span><br><span class="line"></span><br><span class="line">cd blog</span><br><span class="line"></span><br><span class="line">npm i</span><br><span class="line"></span><br><span class="line">hexo s</span><br><span class="line">   </span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-json" data-language="json"><code class="language-json">pkg i nodejs -y
+
+pkg i git -y
+
+npm install hexo-cli -g
+
+hexo init blog
+
+cd blog
+
+npm i
+
+hexo s
+   <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>输入完<code>hexo s</code>，即可通过<code>http://localhost:4000/</code>来访问。</strong></p>
 <hr>
 <p><strong>三、部署到github</strong></p>
@@ -461,9 +487,11 @@
 <p>2.创建仓库</p>
 <p>仓库名称为<code>你的github账户名.github.io</code></p>
 <p>3.安装配置ssh</p>
-<p>安装↓<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg install openssh -y</span><br></pre></td></tr></table></figure><br>配置↓<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">git config --global user.name &quot;你的github账户名&quot;</span><br><span class="line"></span><br><span class="line">git config --global user.email &quot;你注册github时的邮箱&quot;</span><br></pre></td></tr></table></figure></p>
+<p>安装↓<br> <pre class="line-numbers language-none"><code class="language-none">pkg install openssh -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><br>配置↓<br> <pre class="line-numbers language-none"><code class="language-none">git config --global user.name &quot;你的github账户名&quot;
+
+git config --global user.email &quot;你注册github时的邮箱&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre></p>
 <p>4.创建ssh</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>输入完成后连按三次回车键</strong></p>
 <p>5.在github上创建密钥并连接</p>
 <p><strong>在github首页上，点击自己的头像，点击下面的setting,再找到<code>_SSH and GPG keys_</code>,添加ssh key。</strong></p>
@@ -471,27 +499,44 @@
 <p>在<code>Title</code>处随便填一个名字</p>
 <p>在<code>key</code>填ssh的密钥</p>
 <p>ssh密钥获取↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cat /data/data/com.termux/files/home/.ssh/id_rsa.pub</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">cat &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;.ssh&#x2F;id_rsa.pub<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>复制出现的内容到<code>key</code>处，然后点击<code>Add SHH Key</code></p>
 <p>返回termux检查是否成功输入↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ssh -T git@github.com</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">ssh -T git@github.com<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>注：如出现yes或no问题，填<code>yes</code>即可</strong></p>
 <p>出现↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">Hi username You&#x27;ve successfully authenticated, but GitHub does not provide shell access.</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">Hi username You&#39;ve successfully authenticated, but GitHub does not provide shell access.<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p>即为成功</p>
 <p>在blog目录下找到_config.yml,翻到最后，修改为↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">deploy:</span><br><span class="line"> type: git</span><br><span class="line"> repo: git@github.com:你的github用户名/你的github账户名.github.io.git</span><br><span class="line"> branch: master  </span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">deploy:
+ type: git
+ repo: git@github.com:你的github用户名&#x2F;你的github账户名.github.io.git
+ branch: master  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span></code></pre>
 <p><strong>四、完成推送</strong></p>
 <p>1.安装插件↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-deployer-git --save</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">npm install hexo-deployer-git --save<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>2.推送命令↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">hexo clean &amp;&amp; hexo deploy</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">hexo clean &amp;&amp; hexo deploy<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>3.访问地址↓</p>
 <p><code>https://你的github账户名.github.io</code></p>
 <p><strong>四、常见命令</strong></p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">hexo help  #帮助</span><br><span class="line"></span><br><span class="line">hexo clean  #清除缓存和已生成的静态文件</span><br><span class="line"></span><br><span class="line">hexo new &quot;name&quot; # 新建文章 </span><br><span class="line"></span><br><span class="line">hexo new page &quot;name&quot; # 新建页面</span><br><span class="line"></span><br><span class="line">hexo g # 生成静态页面</span><br><span class="line"></span><br><span class="line">hexo s   #本地预览</span><br><span class="line"></span><br><span class="line">hexo d  #部署</span><br><span class="line"></span><br><span class="line">hexo g -d  #生成页面并部署</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">hexo help  #帮助
+
+hexo clean  #清除缓存和已生成的静态文件
+
+hexo new &quot;name&quot; # 新建文章 
+
+hexo new page &quot;name&quot; # 新建页面
+
+hexo g # 生成静态页面
+
+hexo s   #本地预览
+
+hexo d  #部署
+
+hexo g -d  #生成页面并部署<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
                 
             </div>
             <hr/>
@@ -721,6 +766,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->

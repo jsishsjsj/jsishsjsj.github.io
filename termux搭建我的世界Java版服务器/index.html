@@ -7,7 +7,7 @@
     <meta name="keywords" content="termux搭建我的世界Java版服务器">
     <meta name="description" content="一、安装环境
 打开termux输入↓
- 1pkg i openjdk-17 -y
+ pkg i openjdk-17 -y
 
 
 二、选择服务端
@@ -16,7 +16,7 @@
 
 三、搭建
 1.在手机根目录里新建文件夹
-2.打开termux，进入你创建的文件夹内termu">
+2.打开termux，进入你创建的文件夹内termux">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -448,6 +448,9 @@
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
@@ -455,7 +458,7 @@
             <div id="articleContent">
                 <p>一、安装环境</p>
 <p>打开termux输入↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">pkg i openjdk-17 -y</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-json" data-language="json"><code class="language-json">pkg i openjdk<span class="token number">-17</span> -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
 <p>二、选择服务端</p>
@@ -464,11 +467,11 @@
 <hr>
 <p>三、搭建</p>
 <p>1.在手机根目录里新建文件夹</p>
-<p>2.打开termux，进入你创建的文件夹内<br>termux命令↓<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">cd /storage/emulated/0/你创建的文件夹名称</span><br></pre></td></tr></table></figure></p>
+<p>2.打开termux，进入你创建的文件夹内<br>termux命令↓<br> <pre class="line-numbers language-none"><code class="language-none">cd &#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
 <hr>
 <p>3.启动指令</p>
 <p>通用启动指令↓</p>
- <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">java -Xmx1024M -Xms1024M -jar server.jar</span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-none"><code class="language-none">java -Xmx1024M -Xms1024M -jar server.jar<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 <p><strong>注：要将服务端名称改为<code>server</code><br>其他启动指令见官方文档</strong></p>
 <hr>
 <p>四、服务器mod和插件安装</p>
@@ -701,6 +704,9 @@
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->

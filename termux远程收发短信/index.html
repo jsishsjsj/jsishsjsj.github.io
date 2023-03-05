@@ -12,7 +12,7 @@ up主视频链接：点击前往
 0x01 安装所需应用：
 若是MIUI系统请关掉MIUI优化！
 Termux内API安装命令：
-​ 1​pk​g ins">
+​ ​pk​g inst">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -444,6 +444,9 @@ Termux内API安装命令：
         <hr class="clearfix">
 
         
+        <!-- 是否加载使用自带的 prismjs. -->
+        <link rel="stylesheet" href="/libs/prism/prism.min.css">
+        
 
         
 
@@ -456,7 +459,7 @@ Termux内API安装命令：
 <p>0x01 安装所需应用：</p>
 <p><strong>若是MIUI系统请关掉MIUI优化！</strong></p>
 <p>Termux内API安装命令：</p>
-<p>​<br> <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">​pk​g install termux-api -y</span><br></pre></td></tr></table></figure></p>
+<p>​<br> <pre class="line-numbers language-json" data-language="json"><code class="language-json">​pk​g install termux-api -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre></p>
 <hr>
 <p>0x02 为Termux及Termux API授予相应权限</p>
 <p>请观看up主视频</p>
@@ -464,41 +467,41 @@ Termux内API安装命令：
 <hr>
 <p>0x03 为Termux换源</p>
 <p>Termux清华源换源命令：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">sed</span> <span class="string">-i</span> <span class="string">&#x27;s@^\(deb.*stable main\)$@#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@&#x27;</span> <span class="string">$PREFIX/etc/apt/sources.list</span> <span class="string">apt</span> <span class="string">update</span> <span class="string">&amp;&amp;</span> <span class="string">apt</span> <span class="string">upgrade</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">sed <span class="token punctuation">-</span>i 's@^\(deb.<span class="token important">*stable</span> main\)$@<span class="token comment">#\1\ndeb https://mirrors.tuna.tsinghua.edu.cn/termux/apt/termux-main stable main@' $PREFIX/etc/apt/sources.list apt update &amp;&amp; apt upgrade</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
 <p>0x04 使用Termux收发短信</p>
 <p>Termux查看短信：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">termux-sms-list</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">termux<span class="token punctuation">-</span>sms<span class="token punctuation">-</span>list<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>Termux发送短信： <code>   termux-sms-send -n &#39;目标电话&#39; 短信内容 </code></p>
 <hr>
 <p>0x05 使用ssh远程连接Termux</p>
 <p>Termux内ssh安装命令：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">openssh</span> <span class="string">-y</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg install openssh <span class="token punctuation">-</span>y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
 <p><strong>对ssh设置密码：passwd<br>这里注意填写密码时你是看不到密码的<br>如果忘了设置的密码，再运行一遍passwd即可</strong></p>
 <p>启用ssh：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">sshd</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">sshd<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
 <p>安装ifconfig：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">net-tools</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg install net<span class="token punctuation">-</span>tools<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p>查看当前内网IP地址：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ifconfig</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">ifconfig<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 
 
 <p>连接ssh：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">ssh</span> <span class="string">目标IP</span> <span class="string">-p</span> <span class="string">目标端口</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">ssh 目标IP <span class="token punctuation">-</span>p 目标端口<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <p><strong>这里的端口通常是8022，如果无法确定端口，请使用nmap查找：</strong></p>
 <p>安装nmap：</p>
- <figure class="highlight yml"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="string">pkg</span> <span class="string">install</span> <span class="string">nmap</span> <span class="string">-y</span></span><br></pre></td></tr></table></figure>
+ <pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg install nmap <span class="token punctuation">-</span>y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
 <p>0x06 使用cpolar对ssh进行内网穿透：</p>
@@ -738,6 +741,9 @@ Termux内API安装命令：
 <!-- 代码块功能依赖 -->
 <script type="text/javascript" src="/libs/codeBlock/codeBlockFuction.js"></script>
 
+
+  <!-- 是否加载使用自带的 prismjs. -->
+  <script type="text/javascript" src="/libs/prism/prism.min.js"></script>
 
 
 <!-- 代码语言 -->
