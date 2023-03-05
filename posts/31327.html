@@ -4,36 +4,22 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="termux菜单">
-    <meta name="description" content="一、彩虹猫
+    <meta name="keywords" content="termux搭建我的世界基岩版服务器">
+    <meta name="description" content="一、基岩版服务端选择
+1.小游戏服务端
+Nukkitx：
+官网链接：点击前往
+github：点击前往
+2.生存服服务端
+pnx：
+官网链接：点击前往
+github：点击前往
+
+二、安装环境
+ pkg i openjdk-17 -y
 
 
-
- pkg i nyancat
-
-
-
-
- nyancat
-
-
-二、代码雨
-
-
-
- apt i cmatrix
-
-
-
-
- cmatrix
-
-
-三、小火车
-
-
-
- apt update &amp;amp;&amp;amp; apt upgrad">
+三、">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <meta name="renderer" content="webkit|ie-stand|ie-comp">
@@ -45,7 +31,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>termux菜蛋 | jsishsjsj的博客</title>
+    <title>termux搭建我的世界基岩版服务器 | jsishsjsj的博客</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -391,12 +377,12 @@
 
 
 
-<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/18.jpg')">
+<div class="bg-cover pd-header post-cover" style="background-image: url('/medias/featureimages/8.jpg')">
     <div class="container" style="right: 0px;left: 0px;">
         <div class="row">
             <div class="col s12 m12 l12">
                 <div class="brand">
-                    <h1 class="description center-align post-title">termux菜蛋</h1>
+                    <h1 class="description center-align post-title">termux搭建我的世界基岩版服务器</h1>
                 </div>
             </div>
         </div>
@@ -424,8 +410,8 @@
                                 <span class="chip bg-color">termux</span>
                             </a>
                         
-                            <a href="/tags/%E5%BD%A9%E8%9B%8B/">
-                                <span class="chip bg-color">彩蛋</span>
+                            <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">
+                                <span class="chip bg-color">我的世界</span>
                             </a>
                         
                     </div>
@@ -449,7 +435,7 @@
                 
                 <div class="post-date info-break-policy">
                     <i class="far fa-calendar-minus fa-fw"></i>发布日期:&nbsp;&nbsp;
-                    2023-02-05
+                    2023-01-26
                 </div>
                 
 
@@ -473,45 +459,85 @@
 
         <div class="card-content article-card-content">
             <div id="articleContent">
-                <p>一、彩虹猫</p>
-<ol>
-<li></li>
-</ol>
- <pre class="line-numbers language-none"><code class="language-none">pkg i nyancat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
-
-<ol start="2">
-<li></li>
-</ol>
- <pre class="line-numbers language-none"><code class="language-none">nyancat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+                <p>一、基岩版服务端选择</p>
+<p>1.小游戏服务端</p>
+<p>Nukkitx：</p>
+<p>官网链接：<a target="_blank" rel="noopener" href="https://cloudburstmc.org/articles/?mobile=2%22%22">点击前往</a></p>
+<p>github：<a target="_blank" rel="noopener" href="https://github.com/CloudburstMC/Nukkit%22%22">点击前往</a></p>
+<p>2.生存服服务端</p>
+<p>pnx：</p>
+<p>官网链接：<a href="https://www.mcbbs.net/plugin.php?id=link_redirect&target=http://www.powernukkitx.cn/%22%22">点击前往</a></p>
+<p>github：<a target="_blank" rel="noopener" href="https://github.com/PowerNukkitX/PowerNukkitX%22%22">点击前往</a></p>
+<hr>
+<p>二、安装环境</p>
+ <pre class="line-numbers language-json" data-language="json"><code class="language-json">pkg i openjdk<span class="token number">-17</span> -y<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
-<p>二、代码雨</p>
-<ol>
-<li></li>
-</ol>
- <pre class="line-numbers language-none"><code class="language-none">apt i cmatrix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>三、正式开始搭建</p>
+<p>1.在手机根目录下新建文件夹(名称随意)</p>
+<p>手机根目录如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">
+&#x2F;storage&#x2F;emulated&#x2F;0&#x2F;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
 
-<ol start="2">
-<li></li>
-</ol>
- <pre class="line-numbers language-none"><code class="language-none">cmatrix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>2.打开termux进入你刚才创建好的文件夹内</p>
+<p>路径如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>termux指令：</p>
+<pre class="line-numbers language-none"><code class="language-none">cd &#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
 
 <hr>
-<p>三、小火车</p>
-<ol>
-<li></li>
-</ol>
- <pre class="line-numbers language-none"><code class="language-none">apt update &amp;&amp; apt upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>四、安装小游戏服务端</p>
+<p>1.打开termux输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">安装小游戏服务端指令&#123;基岩版版本为1.17.40&#125;
 
-<ol start="2">
-<li></li>
-</ol>
- <pre class="line-numbers language-none"><code class="language-none">apt i sl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+ wget https:&#x2F;&#x2F;ci.opencollab.dev&#x2F;job&#x2F;NukkitX&#x2F;job&#x2F;Nukkit&#x2F;job&#x2F;master&#x2F;lastSuccessfulBuild&#x2F;artifact&#x2F;target&#x2F;nukkit-1.0-SNAPSHOT.jar<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre>
 
-<ol start="3">
-<li></li>
-</ol>
- <pre class="line-numbers language-json" data-language="json"><code class="language-json">sl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>2.给予文件夹权限：</p>
+<pre class="line-numbers language-none"><code class="language-none">chmod +x 你创建的文件夹名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>3.启动服务端指令：</p>
+<pre class="line-numbers language-none"><code class="language-none">java -jar nukkit-1.0-SNAPSHOT.jar<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<hr>
+<p>五、安装生存服服务端</p>
+<p>1.在手机根目录下新建文件夹(名称随意)</p>
+<p>手机根目录如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">
+&#x2F;storage&#x2F;emulated&#x2F;0&#x2F;
+<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span></span></code></pre>
+
+<p>2.打开termux进入你刚才创建好的文件夹内</p>
+<p>路径如下：</p>
+<pre class="line-numbers language-none"><code class="language-none">&#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>termux指令：</p>
+<pre class="line-numbers language-none"><code class="language-none">cd &#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>3.安装服务端指令</p>
+<pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;github.com&#x2F;PowerNukkitX&#x2F;PowerNukkitX&#x2F;releases&#x2F;download&#x2F;1.19.50-r3&#x2F;libs.tar.gz<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+<p>下载完后解压并复制里面的内容到你创建的文件夹内，然后输入：</p>
+<pre class="line-numbers language-none"><code class="language-none">wget https:&#x2F;&#x2F;github.com&#x2F;PowerNukkitX&#x2F;PowerNukkitX&#x2F;releases&#x2F;download&#x2F;1.19.50-r3&#x2F;powernukkitx.jar<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>
+
+<p>4.启动服务端</p>
+<p>指令：</p>
+<pre class="line-numbers language-none"><code class="language-none">java -Dfile.encoding&#x3D;UTF-8 \
+-Djansi.passthrough&#x3D;true \
+-Dterminal.ansi&#x3D;true \
+-XX:+UnlockExperimentalVMOptions \
+-XX:+UseG1GC \
+-XX:+UseStringDeduplication \
+-XX:+EnableJVMCI \
+--module-path&#x3D;.&#x2F;libs&#x2F;truffle-api-22.2.0.jar:.&#x2F;libs&#x2F;graal-sdk-22.2.0.jar: \
+--add-opens java.base&#x2F;java.lang&#x3D;ALL-UNNAMED \
+--add-opens java.base&#x2F;java.io&#x3D;ALL-UNNAMED \
+-cp .&#x2F;powernukkitx.jar:.&#x2F;libs&#x2F;* \
+cn.nukkit.Nukkit<span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span></code></pre>
+
+<hr>
+<p>六、服务器优化和配置</p>
+<p>自行百度解决</p>
+
                 
             </div>
             <hr/>
@@ -537,7 +563,7 @@
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsishsjsj.github.io/termux%E8%8F%9C%E8%9B%8B/">https://jsishsjsj.github.io/termux%E8%8F%9C%E8%9B%8B/</a>
+                    <a href="https://jsishsjsj.github.io/posts/31327.html">https://jsishsjsj.github.io/posts/31327.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -579,8 +605,8 @@
                                     <span class="chip bg-color">termux</span>
                                 </a>
                             
-                                <a href="/tags/%E5%BD%A9%E8%9B%8B/">
-                                    <span class="chip bg-color">彩蛋</span>
+                                <a href="/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/">
+                                    <span class="chip bg-color">我的世界</span>
                                 </a>
                             
                         </div>
@@ -630,13 +656,13 @@
             <div class="article-badge left-badge text-color">
                 <i class="fas fa-chevron-left"></i>&nbsp;上一篇</div>
             <div class="card">
-                <a href="/zerotermux%E6%90%AD%E5%BB%BA%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">
+                <a href="/posts/34617.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/0.jpg" class="responsive-img" alt="zerotermux搭建青龙面板">
+                        <img src="/medias/featureimages/6.jpg" class="responsive-img" alt="宝藏网站（永久更新）">
                         
-                        <span class="card-title">zerotermux搭建青龙面板</span>
+                        <span class="card-title">宝藏网站（永久更新）</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -647,14 +673,14 @@
                     </div>
                     <div class="publish-info">
                         <span class="publish-date">
-                            <i class="far fa-clock fa-fw icon-date"></i>2023-02-16
+                            <i class="far fa-clock fa-fw icon-date"></i>2023-01-29
                         </span>
                         <span class="publish-author">
                             
                             <i class="fas fa-bookmark fa-fw icon-category"></i>
                             
-                            <a href="/categories/Termux%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Termux教程
+                            <a href="/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/" class="post-category">
+                                    宝藏网站
                                 </a>
                             
                             
@@ -664,12 +690,8 @@
                 
                 <div class="card-action article-tags">
                     
-                    <a href="/tags/termux/">
-                        <span class="chip bg-color">termux</span>
-                    </a>
-                    
-                    <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/">
-                        <span class="chip bg-color">青龙面板</span>
+                    <a href="/tags/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/">
+                        <span class="chip bg-color">宝藏网站</span>
                     </a>
                     
                 </div>
@@ -683,13 +705,13 @@
                 下一篇&nbsp;<i class="fas fa-chevron-right"></i>
             </div>
             <div class="card">
-                <a href="/termux%E8%BF%9C%E7%A8%8B%E6%94%B6%E5%8F%91%E7%9F%AD%E4%BF%A1/">
+                <a href="/posts/45217.html">
                     <div class="card-image">
                         
                         
-                        <img src="/medias/featureimages/11.jpg" class="responsive-img" alt="termux远程收发短信">
+                        <img src="/medias/featureimages/14.jpg" class="responsive-img" alt="termux搭建QQ机器人教程">
                         
-                        <span class="card-title">termux远程收发短信</span>
+                        <span class="card-title">termux搭建QQ机器人教程</span>
                     </div>
                 </a>
                 <div class="card-content article-content">
@@ -700,7 +722,7 @@
                     </div>
                     <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-02-03
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-25
                             </span>
                         <span class="publish-author">
                             
@@ -721,8 +743,8 @@
                         <span class="chip bg-color">termux</span>
                     </a>
                     
-                    <a href="/tags/%E7%9F%AD%E4%BF%A1/">
-                        <span class="chip bg-color">短信</span>
+                    <a href="/tags/QQ%E6%9C%BA%E5%99%A8%E4%BA%BA/">
+                        <span class="chip bg-color">QQ机器人</span>
                     </a>
                     
                 </div>
