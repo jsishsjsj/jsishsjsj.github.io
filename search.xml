@@ -4,7 +4,63 @@
   
     
     <entry>
-      <title>termux搭建博客</title>
+      <title>termux搭建博客之安装主题和插件二</title>
+      <link href="/posts/18180.html"/>
+      <url>/posts/18180.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>一、安装主题</strong></p><p>1.以<code>matery</code>主题为例，打开termux输入↓</p> <pre class="line-numbers language-json" data-language="json"><code class="language-json">cd blog &amp;&amp; cd themes &amp;&amp; pkg i git -y &amp;&amp; git clone https<span class="token operator">:</span><span class="token comment">//github.com/blinkfox/hexo-theme-matery.git</span><span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>安装完成后输入<code>ls</code>，出现<code>hexo-theme-matery</code>文件夹即为成功。</p><p>然后回到根目录打开<code>config.yml</code>文件在<code>theme: </code>处<strong>空一格</strong>填写<code>hexo-theme-matery</code>如下所视↓</p> <pre class="line-numbers language-none"><code class="language-none">theme: hexo-theme-matery   <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p><strong>注：要使用<a href="https://github.com/zhanghai/MaterialFiles/releases">质感文件</a>打开config.yml文件</strong></p><hr><p><strong>二、安装插件</strong></p><p><a href="https://hexo.io/plugins">插件下载处</a><br>按照官方文档安装即可</p><hr><p><strong>三、卸载插件</strong></p><p>把安装插件的npm命令，的<code>install</code>改为<code>uninstall</code>，然后执行命令即可</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> termux </tag>
+            
+            <tag> 博客 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>博客与网站的区别</title>
+      <link href="/posts/48801.html"/>
+      <url>/posts/48801.html</url>
+      
+        <content type="html"><![CDATA[<p>博客是一种网站。 博客与其他类型的网站之间的唯一真正区别是，博客会定期以新内容进行更新，并以相反的时间顺序显示，也就是新帖子优先。</p><hr><p>博客可以是一个大型网站的一部分。(例如<strong>cson</strong>)企业网站通常会有一个博客版块用来定期更新内容去向客户传递新的东西。</p><hr><p>你也可以这么理解，博客是由文章通过分类和标签组织起来展示内容的，而网站是由页面展示内容。</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 博客 </tag>
+            
+            <tag> 网站 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>termux搭建博客一</title>
       <link href="/posts/2050.html"/>
       <url>/posts/2050.html</url>
       
@@ -14,6 +70,8 @@
       <categories>
           
           <category> Termux教程 </category>
+          
+          <category> Hexo </category>
           
       </categories>
       
