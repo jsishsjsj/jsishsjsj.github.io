@@ -116,33 +116,6 @@
     
     
     <entry>
-      <title>termux菜蛋</title>
-      <link href="/posts/55028.html"/>
-      <url>/posts/55028.html</url>
-      
-        <content type="html"><![CDATA[<p>一、彩虹猫</p><ol><li></li></ol> <pre class="line-numbers language-none"><code class="language-none">pkg i nyancat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="2"><li></li></ol> <pre class="line-numbers language-none"><code class="language-none">nyancat<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><hr><p>二、代码雨</p><ol><li></li></ol> <pre class="line-numbers language-none"><code class="language-none">apt i cmatrix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="2"><li></li></ol> <pre class="line-numbers language-none"><code class="language-none">cmatrix<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><hr><p>三、小火车</p><ol><li></li></ol> <pre class="line-numbers language-none"><code class="language-none">apt update &amp;&amp; apt upgrade<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="2"><li></li></ol> <pre class="line-numbers language-none"><code class="language-none">apt i sl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><ol start="3"><li></li></ol> <pre class="line-numbers language-json" data-language="json"><code class="language-json">sl<span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
-      
-      
-      <categories>
-          
-          <category> Termux教程 </category>
-          
-      </categories>
-      
-      
-        <tags>
-            
-            <tag> termux </tag>
-            
-            <tag> 彩蛋 </tag>
-            
-        </tags>
-      
-    </entry>
-    
-    
-    
-    <entry>
       <title>termux远程收发短信</title>
       <link href="/posts/54405.html"/>
       <url>/posts/54405.html</url>
