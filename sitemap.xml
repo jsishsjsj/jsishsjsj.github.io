@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://jsishsjsj.github.io/posts/3774.html</loc>
+    
+    <lastmod>2023-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/posts/15815.html</loc>
+    
+    <lastmod>2023-03-09</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://jsishsjsj.github.io/posts/45217.html</loc>
     
     <lastmod>2023-03-09</lastmod>
@@ -77,15 +95,6 @@
     <loc>https://jsishsjsj.github.io/posts/18180.html</loc>
     
     <lastmod>2023-03-09</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://jsishsjsj.github.io/posts/15815.html</loc>
-    
-    <lastmod>2023-03-05</lastmod>
     
     <changefreq>monthly</changefreq>
     <priority>0.6</priority>
@@ -217,6 +226,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://jsishsjsj.github.io/tags/%E6%81%A2%E5%A4%8D%E5%8C%85/</loc>
+    <lastmod>2023-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -242,6 +258,13 @@
   
   <url>
     <loc>https://jsishsjsj.github.io/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/</loc>
+    <lastmod>2023-03-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://jsishsjsj.github.io/categories/termux%E6%95%99%E7%A8%8B/</loc>
     <lastmod>2023-03-09</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

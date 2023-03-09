@@ -4,7 +4,7 @@
 
 <head>
     <meta charset="utf-8">
-    <meta name="keywords" content="分类: Hexo, jsishsjsj的博客">
+    <meta name="keywords" content="jsishsjsj的博客">
     <meta name="description" content="jsishsjsj的博客站点⍥">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
@@ -17,7 +17,7 @@
     <!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-    <title>分类: Hexo | jsishsjsj的博客站点⍥</title>
+    <title>jsishsjsj的博客站点⍥</title>
     <link rel="icon" type="image/png" href="/favicon.png">
     
     <style>
@@ -52,8 +52,6 @@
 
 
 
-
-    
 
 
 
@@ -359,6 +357,7 @@
 
 </header>
 
+    
     <div class="bg-cover pd-header about-cover">
     <div class="container">
     <div class="row">
@@ -405,97 +404,49 @@
     </div>
 </div>
 
+
 <main class="content">
 
     
 
-<div id="category-cloud" class="container chip-container">
-    <div class="card">
-        <div class="card-content">
-            <div class="tag-title center-align">
-                <i class="fas fa-bookmark"></i>&nbsp;&nbsp;文章分类
-            </div>
-            <div class="tag-chips">
-                
-                
-                
-                <a href="/categories/Termux%E6%95%99%E7%A8%8B/" title="Termux教程: 8">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #F9EBEA;">Termux教程
-                        <span class="tag-length">8</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/Termux%E6%95%99%E7%A8%8B/Hexo/" title="Hexo: 2">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-active "
-                            style="background-color: #F5EEF8;">Hexo
-                        <span class="tag-length">2</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E6%9D%82%E8%B0%88/" title="杂谈: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #D5F5E3;">杂谈
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/%E5%AE%9D%E8%97%8F%E7%BD%91%E7%AB%99/" title="宝藏网站: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #E8F8F5;">宝藏网站
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-                <a href="/categories/termux%E6%95%99%E7%A8%8B/" title="termux教程: 1">
-                    <span class="chip center-align waves-effect waves-light
-                             chip-default "
-                            style="background-color: #FEF9E7;">termux教程
-                        <span class="tag-length">1</span>
-                    </span>
-                </a>
-                
-                
-            </div>
-        </div>
-    </div>
-</div>
-
-
     
 
+    <!-- 所有文章卡片 -->
     <article id="articles" class="container articles">
-        <div class="row tags-posts">
+        <div class="row article-row">
             
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
+             <!-- 隐藏某个文章 -->
+            <div class="article col s12 m6 l4" data-aos="zoom-in">
                 <div class="card">
-                    <a href="/posts/18180.html">
-                        <div class="card-image tag-image">
+                    <a href="/posts/15815.html">
+                        <div class="card-image">
                             
-                            <img src="https://hexo.bootcss.com/logo.png" class="responsive-img" alt="termux搭建博客之安装主题和插件二">
                             
-                            <span class="card-title">termux搭建博客之安装主题和插件二</span>
+                            <img src="/medias/featureimages/19.jpg" class="responsive-img" alt="termux内网穿透教程">
+                            
+                            <span class="card-title">termux内网穿透教程</span>
                         </div>
                     </a>
+
                     <div class="card-content article-content">
                         <div class="summary block-with-text">
                             
-                                一、安装主题
-1.以matery主题为例，打开termux输入↓
- cd blog &amp;&amp; cd themes &amp;&amp; pkg i git -y &amp;&amp; git clone https://gith
+                                一、先去樱花内网穿透官网注册账户
+注册完成后创建隧道
+并复制你的密钥
+樱花内网穿透官网链接：点击前往
+
+二、打开termux输入
+    pkg install proot
+
+termux-chroot
+
+curl -L -o frp ht
                             
                         </div>
                         <div class="publish-info">
                             <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-09
+                                <i class="far fa-clock fa-fw icon-date"></i>2023-01-25
                             </span>
                             <span class="publish-author">
                                 
@@ -503,10 +454,6 @@
                                 
                                 <a href="/categories/Termux%E6%95%99%E7%A8%8B/" class="post-category">
                                     Termux教程
-                                </a>
-                                
-                                <a href="/categories/Termux%E6%95%99%E7%A8%8B/Hexo/" class="post-category">
-                                    Hexo
                                 </a>
                                 
                                 
@@ -521,86 +468,44 @@
                             <span class="chip bg-color">termux</span>
                         </a>
                         
-                        <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                            <span class="chip bg-color">博客</span>
+                        <a href="/tags/%E5%86%85%E7%BD%91%E7%A9%BF%E9%80%8F/">
+                            <span class="chip bg-color">内网穿透</span>
                         </a>
                         
                     </div>
                     
                 </div>
             </div>
-            
-            <div class="article tag-post col s12 m6 l4" data-aos="zoom-in">
-                <div class="card">
-                    <a href="/posts/2050.html">
-                        <div class="card-image tag-image">
-                            
-                            <img src="https://hexo.bootcss.com/logo.png" class="responsive-img" alt="termux搭建博客一">
-                            
-                            <span class="card-title">termux搭建博客一</span>
-                        </div>
-                    </a>
-                    <div class="card-content article-content">
-                        <div class="summary block-with-text">
-                            
-                                一、博客框架
-博客框架为：hexo
-
-二、搭建
-1.打开termux输入↓
- pkg i nodejs -y
-
-pkg i git -y
-
-npm install hexo-cli -g
-
-hexo init blog
-
-cd blog
-
-
-                            
-                        </div>
-                        <div class="publish-info">
-                            <span class="publish-date">
-                                <i class="far fa-clock fa-fw icon-date"></i>2023-03-05
-                            </span>
-                            <span class="publish-author">
-                                
-                                <i class="fas fa-bookmark fa-fw icon-category"></i>
-                                
-                                <a href="/categories/Termux%E6%95%99%E7%A8%8B/" class="post-category">
-                                    Termux教程
-                                </a>
-                                
-                                <a href="/categories/Termux%E6%95%99%E7%A8%8B/Hexo/" class="post-category">
-                                    Hexo
-                                </a>
-                                
-                                
-                            </span>
-                        </div>
-                    </div>
-
-                    
-                    <div class="card-action article-tags">
-                        
-                        <a href="/tags/termux/">
-                            <span class="chip bg-color">termux</span>
-                        </a>
-                        
-                        <a href="/tags/%E5%8D%9A%E5%AE%A2/">
-                            <span class="chip bg-color">博客</span>
-                        </a>
-                        
-                    </div>
-                    
-                </div>
-            </div>
+              <!-- 隐藏某个文章 -->
             
         </div>
     </article>
+
 </main>
+
+
+<div class="container paging">
+    <div class="row">
+        <div class="col s6 m4 l4">
+            
+            <a href="/"
+               class="left btn-floating btn-large waves-effect waves-light bg-color">
+                <i class="fas fa-angle-left"></i>
+            </a>
+            
+        </div>
+        <div class="page-info col m4 l4 hide-on-small-only">
+            <div class="center-align b-text-gray">2 / 2</div>
+        </div>
+        <div class="col s6 m4 l4">
+            
+            <a class="right btn-floating btn-large disabled">
+                <i class="fas fa-angle-right"></i>
+            </a>
+            
+        </div>
+    </div>
+</div>
 
 
 
