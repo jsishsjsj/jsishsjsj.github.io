@@ -4,6 +4,35 @@
   
     
     <entry>
+      <title>termux搭建博客之写作三</title>
+      <link href="/posts/44435.html"/>
+      <url>/posts/44435.html</url>
+      
+        <content type="html"><![CDATA[<p><strong>一、插入图片</strong></p><p>在文章需要的地方插入↓</p> <pre class="line-numbers language-json" data-language="json"><code class="language-json">&lt;img src=<span class="token string">"图片地址"</span>/>  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><hr><p><strong>二、插入视频</strong></p><p>可生成视频外链的平台有<a href="https://m.bilibili.com/">B站</a>、<a href="https://m.ixigua.com/">西瓜视频</a>等。</p><p>使用电脑版网页找一个视频点击分享，点击嵌入式代码，然后复制到文章中。</p><hr><p><strong>三、插入音频</strong></p><p>插入音频推荐<a href="https://music.163.com/">网易云音乐</a>，点击分享音乐，点击嵌入式代码，然后复制到文章中。</p><hr><p><strong>四、分割线</strong></p><p>在文章需要分割的地方输入：  —</p><hr><p><strong>五、代码高亮</strong></p><p>如下↓</p> <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;&#96;json这里放代码  &#96;&#96;&#96;  <span aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span></code></pre><hr><p><strong>六、文字高亮</strong></p><p>1.斜体文字↓</p> <pre class="line-numbers language-none"><code class="language-none">*这里放文字*  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>2.深色文字↓</p> <pre class="line-numbers language-none"><code class="language-none">**这里放文字**  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><p>3.文字块↓</p> <pre class="line-numbers language-none"><code class="language-none">&#96;&#96;这里放文字&#96;&#96;  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre><hr><p><strong>七、超链接</strong></p> <pre class="line-numbers language-none"><code class="language-none">[这里放文字](这里填链接地址)  <span aria-hidden="true" class="line-numbers-rows"><span></span></span></code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+          <category> Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> termux </tag>
+            
+            <tag> hexo写作 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>termux恢复包制作并使用</title>
       <link href="/posts/3774.html"/>
       <url>/posts/3774.html</url>
