@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search> 
+  
+  
+    
+    <entry>
+      <title>Termux开泰拉瑞亚服务器教程</title>
+      <link href="/blog/24780.html"/>
+      <url>/blog/24780.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在TShock 5.0以后，现在需要 .net6.0不需要mono，同时也有了汉化，启动的时候加上“-lang7”<br><a href="https://github.com/Pryaxis/TShock">TShock</a> </p><p>TShock安装启动<br>以TShock-5.2-for-Terraria-1.4.4.9为例<br>使用<a href="https://m.ddooo.com/softdown/217266.htm">泰拉瑞亚1.4.4.9</a> 进服</p><p>1.更换清华源(卡住按回车键)</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;termux&#x2F;termux-packages-24 stable main@&#39; $PREFIX&#x2F;etc&#x2F;apt&#x2F;sources.list &amp;&amp; apt update &amp;&amp; apt upgrade </code></pre><p>2.下载proot-distro</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i proot-distro -y</code></pre><p>3.下载wget</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i wget -y</code></pre><p>4.下载ubuntu</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">proot－distro install ubuntu -y</code></pre><p>5.登陆ubuntu</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">proot-distro login ubuntu</code></pre><p>6.更新</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">apt-get update</code></pre><p>5.下载 .net6</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">apt-get install dotnet-sdk-6.0</code></pre><p>6.新建储存文件夹(文件夹名称随意)</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">mkdir TShock </code></pre><p>7.进入文件夹(文件夹名称以TShock为例)</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">cd TShock</code></pre><p>8.下载TShock</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">wget https:&#x2F;&#x2F;github.com&#x2F;Pryaxis&#x2F;TShock&#x2F;releases&#x2F;download&#x2F;v5.2.0&#x2F;TShock-5.2-for-Terraria-1.4.4.9-linux-arm64-Release.zip</code></pre><p>9.解压TShock(不同版本名称不一样，输入ls来获取zip文件名称)</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">unzip TShock-5.2-for-Terraria-1.4.4.9-linux-arm64-Release.zip</code></pre><p>解压完后会有一个tar文件，同样输入ls来获取tar文件名称</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">tar -xvf TShock-Beta-linux-x64-Release.tar</code></pre><p>10.运行tshock(默认端口7777)</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">.&#x2F;TShock.Server</code></pre><p>中文</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">.&#x2F;TShock.Server -lang 7</code></pre><p>11.关闭服务器<br>按ctrl+c，并按下回车键<br>(ps：创建世界什么的自己百度(^￫ᴥ￩^))</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 泰拉瑞亚 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>ZeroTermux搭建青龙面板</title>
+      <link href="/blog/33813.html"/>
+      <url>/blog/33813.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、下载zerotermux"><a href="#一、下载zerotermux" class="headerlink" title="一、下载zerotermux"></a>一、下载zerotermux</h1><p><a href="https://github.com/hanxinhao000/ZeroTermux">zerotermux</a> </p><hr><h1 id="二、安装青龙面板"><a href="#二、安装青龙面板" class="headerlink" title="二、安装青龙面板"></a>二、安装青龙面板</h1><p>1.打开zerotermux输入↓</p><p><code>termux-setup-storage</code></p><p>2.下载青龙控制面板恢复包<br><a href="https://cloud.189.cn/t/IreQJzVFb6vi">青龙面板</a>（访问码：j9zt）</p><p>下载termux_alpine_ql_v2.12.2即可</p><p>3.把你下载好的恢复包导入内部存储&#x2F;xinhao&#x2F;data&#x2F;里面<br>[完整目录]如下↓</p><p>&#x2F;storage&#x2F;emulated&#x2F;0&#x2F;xinhao&#x2F;data&#x2F;</p><p>注：没有data文件夹的自己建一个</p><p>4.返回zerotermux里面，左边侧滑找到备份&#x2F;恢复，之后点进去之后选择恢复，选择你要回复的包</p><p>5.切换到青龙面板容器：</p><p>侧滑-&gt;容器切换-&gt;选择刚刚恢复的容器名称-&gt;切换-&gt;需要重启</p><hr><h1 id="三、启动青龙面板"><a href="#三、启动青龙面板" class="headerlink" title="三、启动青龙面板"></a>三、启动青龙面板</h1><p>1.最后一步，我们需要执行青龙的安装程序ql.sh。输入以下命令</p><p><code>./ql.sh</code></p><hr><h1 id="四、访问青龙面板"><a href="#四、访问青龙面板" class="headerlink" title="四、访问青龙面板"></a>四、访问青龙面板</h1><p>打开浏览器输入以下地址↓</p><p>127.0.0.1:5700</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 青龙面包 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Termux搭建我的世界Java服务器</title>
+      <link href="/blog/27102.html"/>
+      <url>/blog/27102.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、安装环境"><a href="#一、安装环境" class="headerlink" title="一、安装环境"></a>一、安装环境</h1><p>打开termux输入↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i openjdk-17 -y</code></pre><hr><h1 id="二、选择服务端"><a href="#二、选择服务端" class="headerlink" title="二、选择服务端"></a>二、选择服务端</h1><p>自行选择</p><p>注：服务端要选择1.18版本以上</p><hr><h1 id="三、搭建"><a href="#三、搭建" class="headerlink" title="三、搭建"></a>三、搭建</h1><p>1.在手机根目录里新建文件夹</p><p>2.打开termux，进入你创建的文件夹内<br>termux命令↓<br><code>cd /storage/emulated/0/你创建的文件夹名称</code></p><p>3.启动指令</p><p>通用启动指令↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">java -Xmx1024M -Xms1024M -jar server.jar</code></pre><p>注：要将服务端名称改为server<br>其他启动指令见官方文档</p><hr><h1 id="四、服务器mod和插件安装"><a href="#四、服务器mod和插件安装" class="headerlink" title="四、服务器mod和插件安装"></a>四、服务器mod和插件安装</h1><p>自行解决</p><hr><h1 id="五、服务器优化和配置"><a href="#五、服务器优化和配置" class="headerlink" title="五、服务器优化和配置"></a>五、服务器优化和配置</h1><p>自行解决</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的世界 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Termux搭建基岩版服务器</title>
+      <link href="/blog/48719.html"/>
+      <url>/blog/48719.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、基岩版服务端选择"><a href="#一、基岩版服务端选择" class="headerlink" title="一、基岩版服务端选择"></a>一、基岩版服务端选择</h1><p>1.小游戏服务端</p><p><a href="https://cloudburstmc.org/articles/?mobile=2%22%22">Nukkitx</a> </p><p><a href="https://github.com/CloudburstMC/Nukkit">github</a> </p><p>2.生存服服务端</p><p>pnx：</p><p><a href="https://www.mcbbs.net/plugin.php?id=link_redirect&target=http://www.powernukkitx.cn">pnx</a> </p><p><a href="https://github.com/PowerNukkitX/PowerNukkitX">GitHub</a> </p><hr><h1 id="二、安装环境"><a href="#二、安装环境" class="headerlink" title="二、安装环境"></a>二、安装环境</h1><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i openjdk-17 -y</code></pre><hr><h1 id="三、正式开始搭建"><a href="#三、正式开始搭建" class="headerlink" title="三、正式开始搭建"></a>三、正式开始搭建</h1><p>1.在手机根目录下新建文件夹(名称随意)</p><p>手机根目录如下：</p><p><code>/storage/emulated/0/</code></p><p>2.打开termux进入你刚才创建好的文件夹内</p><p>路径如下：</p><p><code>/storage/emulated/0/你创建的文件夹名称</code></p><p>termux指令：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">cd &#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称</code></pre><hr><h1 id="四、安装小游戏服务端"><a href="#四、安装小游戏服务端" class="headerlink" title="四、安装小游戏服务端"></a>四、安装小游戏服务端</h1><p>1.打开termux输入：</p><p>安装小游戏服务端指令{基岩版版本为1.17.40}</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">wget https:&#x2F;&#x2F;ci.opencollab.dev&#x2F;job&#x2F;NukkitX&#x2F;job&#x2F;Nukkit&#x2F;job&#x2F;master&#x2F;lastSuccessfulBuild&#x2F;artifact&#x2F;target&#x2F;nukkit-1.0-SNAPSHOT.jar</code></pre><p>2.给予文件夹权限：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">chmod +x 你创建的文件夹名称</code></pre><p>3.启动服务端指令：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">java -jar nukkit-1.0-SNAPSHOT.jar</code></pre><h1 id="五、安装生存服服务端"><a href="#五、安装生存服服务端" class="headerlink" title="五、安装生存服服务端"></a>五、安装生存服服务端</h1><p>1.在手机根目录下新建文件夹(名称随意)</p><p>手机根目录如下：</p><p><code>/storage/emulated/0/</code></p><p>2.打开termux进入你刚才创建好的文件夹内</p><p>路径如下：</p><p><code>/storage/emulated/0/你创建的文件夹名称</code></p><p>termux指令：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">cd &#x2F;storage&#x2F;emulated&#x2F;0&#x2F;你创建的文件夹名称</code></pre><p>3.安装服务端指令</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">wget https:&#x2F;&#x2F;github.com&#x2F;PowerNukkitX&#x2F;PowerNukkitX&#x2F;releases&#x2F;download&#x2F;1.19.50-r3&#x2F;libs.tar.gz</code></pre><p>下载完后解压并复制里面的内容到你创建的文件夹内，然后输入：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">wget https:&#x2F;&#x2F;github.com&#x2F;PowerNukkitX&#x2F;PowerNukkitX&#x2F;releases&#x2F;download&#x2F;1.19.50-r3&#x2F;powernukkitx.jar</code></pre><p>4.启动服务端</p><p>指令：</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">java -Dfile.encoding&#x3D;UTF-8 \-Djansi.passthrough&#x3D;true \-Dterminal.ansi&#x3D;true \-XX:+UnlockExperimentalVMOptions \-XX:+UseG1GC \-XX:+UseStringDeduplication \-XX:+EnableJVMCI \--module-path&#x3D;.&#x2F;libs&#x2F;truffle-api-22.2.0.jar:.&#x2F;libs&#x2F;graal-sdk-22.2.0.jar: \--add-opens java.base&#x2F;java.lang&#x3D;ALL-UNNAMED \--add-opens java.base&#x2F;java.io&#x3D;ALL-UNNAMED \-cp .&#x2F;powernukkitx.jar:.&#x2F;libs&#x2F;* \cn.nukkit.Nukkit</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 我的世界 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Termux内网穿透</title>
+      <link href="/blog/4514.html"/>
+      <url>/blog/4514.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、先去樱花内网-穿透注册账户"><a href="#一、先去樱花内网-穿透注册账户" class="headerlink" title="一、先去樱花内网 穿透注册账户"></a>一、先去<a href="https://www.natfrp.com/">樱花内网</a> 穿透注册账户</h1><p>注册完成后创建隧道</p><p>并复制你的密钥</p><hr><h1 id="二、打开termux输入"><a href="#二、打开termux输入" class="headerlink" title="二、打开termux输入"></a>二、打开termux输入</h1><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg install proottermux-chrootcurl -L -o frp https:&#x2F;&#x2F;getfrp.sh&#x2F;d&#x2F;frpc_linux_arm64chmod +x frp.&#x2F;frp</code></pre><hr><h1 id="三、输入-frp后会弹出一个对话框，在对话框中点击蓝色输入框，输入你刚才复制的密钥。"><a href="#三、输入-frp后会弹出一个对话框，在对话框中点击蓝色输入框，输入你刚才复制的密钥。" class="headerlink" title="三、输入.&#x2F;frp后会弹出一个对话框，在对话框中点击蓝色输入框，输入你刚才复制的密钥。"></a>三、输入.&#x2F;frp后会弹出一个对话框，在对话框中点击蓝色输入框，输入你刚才复制的密钥。</h1><p>按回车键选择并确认你创建的隧道<br>按ctrl+c来开启隧道<br>关闭隧道也按ctrl+c</p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 内网穿透 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Termux搭建博客之主题插件</title>
+      <link href="/blog/61735.html"/>
+      <url>/blog/61735.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、安装主题"><a href="#一、安装主题" class="headerlink" title="一、安装主题"></a>一、安装主题</h1><p>1.以matery主题为例，打开termux输入↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">cd blog &amp;&amp; cd themes &amp;&amp; pkg i git -y &amp;&amp; git clone https:&#x2F;&#x2F;github.com&#x2F;blinkfox&#x2F;hexo-theme-matery.git</code></pre><p>然后回到根目录打开config.yml文件在theme: 处空一格填写hexo-theme-matery如下所视↓</p><p><code>theme: hexo-theme-matery</code></p><p>注：要使用<a href="https://github.com/zhanghai/MaterialFiles/releases">质感文件</a> 打开config.yml文件</p><hr><h1 id="二、安装插件"><a href="#二、安装插件" class="headerlink" title="二、安装插件"></a>二、安装插件</h1><p><a href="https://hexo.io/plugins">插件下载处</a><br>按照官方文档安装即可</p><hr><h1 id="三、卸载插件"><a href="#三、卸载插件" class="headerlink" title="三、卸载插件"></a>三、卸载插件</h1><p>把安装插件的npm命令，的install改为uninstall，然后执行命令即可</p><hr><h1 id="四、相关教程"><a href="#四、相关教程" class="headerlink" title="四、相关教程"></a>四、相关教程</h1><p><a href="http://jsishsjsj.github.io/blog/62898.html">Termux搭建博客</a> </p>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
+      <title>Termux搭建博客</title>
+      <link href="/blog/62898.html"/>
+      <url>/blog/62898.html</url>
+      
+        <content type="html"><![CDATA[<h1 id="一、博客框架"><a href="#一、博客框架" class="headerlink" title="一、博客框架"></a>一、博客框架</h1><p>博客框架为<a href="https://hexo.bootcss.com/">hexo</a> </p><hr><h1 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h1><p>1.打开termux输入↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i nodejs -ypkg i git -ynpm install hexo-cli -ghexo init blogcd blognpm ihexo s</code></pre><p>输入完hexo s，即可通过<a href="http://localhost:4000/">http://localhost:4000/</a> 来访问。</p><hr><h1 id="三、部署到github"><a href="#三、部署到github" class="headerlink" title="三、部署到github"></a>三、部署到github</h1><p>1.注册github</p><p><a href="https://github.com/">GitHub</a> </p><p>2.创建仓库</p><p>仓库名称为你的github账户名.github.io</p><p>3.安装配置ssh</p><p>安装↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg install openssh -y</code></pre><p>配置↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">git config --global user.name &quot;你的github账户名&quot;git config --global user.email &quot;你注册github时的邮箱&quot;</code></pre><p>4.创建ssh</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</code></pre><p>输入完成后连按三次回车键</p><p>5.在github上创建密钥并连接</p><p>在github首页上，点击自己的头像，点击下面的setting,再找到_SSH and GPG keys_,添加ssh key。</p><p>如图↓</p><img src="https://www.helloimg.com/images/2023/03/05/oaRAKR.png"/> 在Title处随便填一个名字<p>在key填ssh的密钥</p><p>ssh密钥获取↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">cat &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;.ssh&#x2F;id_rsa.pub</code></pre><p>复制出现的内容到key处，然后点击Add SHH Key</p><p>返回termux检查是否成功输入↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">ssh -T git@github.com</code></pre><p>注：如出现yes或no问题，填yes即可</p><p>出现↓</p><p><code>Hi username You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code><br>即为成功</p><p>在blog目录下找到_config.yml,翻到最后，修改为↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">deploy: type: git repo: git@github.com:你的github用户名&#x2F;你的github账户名.github.io.git branch: master  </code></pre><hr><h1 id="四、完成推送"><a href="#四、完成推送" class="headerlink" title="四、完成推送"></a>四、完成推送</h1><p>1.安装插件↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">npm install hexo-deployer-git --save</code></pre><p>2.推送命令↓</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">hexo clean &amp;&amp; hexo deploy</code></pre><p>3.访问地址↓</p><p><code>https://你的github账户名.github.io</code>  </p><hr><h1 id="五、常见命令"><a href="#五、常见命令" class="headerlink" title="五、常见命令"></a>五、常见命令</h1><pre class="language-yaml" data-language="yaml"><code class="language-yaml">hexo help  #帮助hexo clean  #清除缓存和已生成的静态文件hexo new &quot;name&quot; # 新建文章 hexo new page &quot;name&quot; # 新建页面hexo g # 生成静态页面hexo s   #本地预览hexo d  #部署hexo g -d  #生成页面并部署</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> Termux教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> hexo </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+  
+  
+</search>
