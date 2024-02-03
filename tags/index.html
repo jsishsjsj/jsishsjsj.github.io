@@ -281,7 +281,24 @@
 
             <div class="description center-align">
                 
-                    致力于termux整活的blog
+                <span id="subtitle"></span>
+                <script src="/libs/typed/typed.js"></script>
+                <script>
+                    var typed = new Typed("#subtitle", {
+                        strings: [ 
+                            
+                                "从来没有真正的绝境, 只有心灵的迷途",
+                            
+                                "Never really desperate, only the lost of the soul",
+                            
+                        ],
+                        startDelay: 300,
+                        typeSpeed: 100,
+                        loop: true,
+                        backSpeed: 50,
+                        showCursor: true
+                    });
+                </script>
                 
             </div>
         </div>
@@ -356,10 +373,19 @@
                 </a>
                 
                 
-                <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E5%8C%85/" title="青龙面包: 1">
+                <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E5%8C%85/" title="青龙面包: 0">
                     <span class="chip center-align waves-effect waves-light
                              chip-default "
                             data-tagname="青龙面包" style="background-color: #FEF9E7;">青龙面包
+                        <span class="tag-length">0</span>
+                    </span>
+                </a>
+                
+                
+                <a href="/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/" title="青龙面板: 1">
+                    <span class="chip center-align waves-effect waves-light
+                             chip-default "
+                            data-tagname="青龙面板" style="background-color: #F8F9F9;">青龙面板
                         <span class="tag-length">1</span>
                     </span>
                 </a>
@@ -388,7 +414,7 @@
 <script type="text/javascript">
     
 
-    $('#tag-wordcloud').jQCloud([{"text":"内网穿透","weight":1,"link":"/tags/内网穿透/"},{"text":"泰拉瑞亚","weight":1,"link":"/tags/泰拉瑞亚/"},{"text":"hexo","weight":2,"link":"/tags/hexo/"},{"text":"我的世界","weight":2,"link":"/tags/我的世界/"},{"text":"青龙面包","weight":1,"link":"/tags/青龙面包/"}], {
+    $('#tag-wordcloud').jQCloud([{"text":"内网穿透","weight":1,"link":"/tags/内网穿透/"},{"text":"泰拉瑞亚","weight":1,"link":"/tags/泰拉瑞亚/"},{"text":"hexo","weight":2,"link":"/tags/hexo/"},{"text":"我的世界","weight":2,"link":"/tags/我的世界/"},{"text":"青龙面包","weight":0,"link":"/tags/青龙面包/"},{"text":"青龙面板","weight":1,"link":"/tags/青龙面板/"}], {
         autoResize: true
     });
 </script>
