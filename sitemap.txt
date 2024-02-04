@@ -1,3 +1,4 @@
+http://jsishsjsj.github.io/blog/51354.html
 http://jsishsjsj.github.io/blog/33813.html
 http://jsishsjsj.github.io/blog/24780.html
 http://jsishsjsj.github.io/blog/4514.html
@@ -16,4 +17,6 @@ http://jsishsjsj.github.io/tags/%E6%B3%B0%E6%8B%89%E7%91%9E%E4%BA%9A/
 http://jsishsjsj.github.io/tags/hexo/
 http://jsishsjsj.github.io/tags/%E6%88%91%E7%9A%84%E4%B8%96%E7%95%8C/
 http://jsishsjsj.github.io/tags/%E9%9D%92%E9%BE%99%E9%9D%A2%E6%9D%BF/
+http://jsishsjsj.github.io/tags/%E6%9B%B4%E6%96%B0%E6%97%A5%E5%BF%97/
 http://jsishsjsj.github.io/categories/Termux%E6%95%99%E7%A8%8B/
+http://jsishsjsj.github.io/categories/%E6%9D%82%E8%B0%88/

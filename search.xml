@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>博客更新日志</title>
+      <link href="/blog/51354.html"/>
+      <url>/blog/51354.html</url>
+      
+        <content type="html"><![CDATA[<blockquote><p>如你所见，我的小站更新啦！</p></blockquote><h1 id="更新内容"><a href="#更新内容" class="headerlink" title="更新内容"></a>更新内容</h1><p>1.优化URL<br>2.更新hexo和matery版本。</p><pre class="language-yaml" data-language="yaml"><code class="language-yaml">hexo: 7.1.1matery: 2.0.0</code></pre><p>3.去除无用或有危害文章<br>4.增加文章打赏<br>5.底部增加繁体按钮切换</p><hr><iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=330 height=86 src="//music.163.com/outchain/player?type=2&id=1815725297&auto=1&height=66"></iframe>]]></content>
+      
+      
+      <categories>
+          
+          <category> 杂谈 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> 更新日志 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>Termux开泰拉瑞亚服务器教程</title>
       <link href="/blog/24780.html"/>
       <url>/blog/24780.html</url>
