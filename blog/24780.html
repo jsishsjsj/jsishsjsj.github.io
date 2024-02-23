@@ -351,47 +351,47 @@ TShock安装启动以TShock-5.2-for-Terraria-1.4.4.9为例使用泰拉瑞亚1.4"
                 <h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>在TShock 5.0以后，现在需要 .net6.0不需要mono，同时也有了汉化，启动的时候加上“-lang7”<br><a target="_blank" rel="noopener" href="https://github.com/Pryaxis/TShock">TShock</a> </p>
 <p>TShock安装启动<br>以TShock-5.2-for-Terraria-1.4.4.9为例<br>使用<a target="_blank" rel="noopener" href="https://m.ddooo.com/softdown/217266.htm">泰拉瑞亚1.4.4.9</a> 进服</p>
 <p>1.更换清华源(卡住按回车键)</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;termux&#x2F;termux-packages-24 stable main@&#39; $PREFIX&#x2F;etc&#x2F;apt&#x2F;sources.list &amp;&amp; apt update &amp;&amp; apt upgrade </code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">sed -i &#39;s@^\(deb.*stable main\)$@#\1\ndeb https:&#x2F;&#x2F;mirrors.tuna.tsinghua.edu.cn&#x2F;termux&#x2F;termux-packages-24 stable main@&#39; $PREFIX&#x2F;etc&#x2F;apt&#x2F;sources.list &amp;&amp; apt update &amp;&amp; apt upgrade </code></pre>
 
 <p>2.下载proot-distro</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i proot-distro -y</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg i proot-distro -y</code></pre>
 
 
 <p>3.下载wget</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i wget -y</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg i wget -y</code></pre>
 
 <p>4.下载ubuntu</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">proot－distro install ubuntu -y</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">proot－distro install ubuntu -y</code></pre>
 
 <p>5.登陆ubuntu</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">proot-distro login ubuntu</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">proot-distro login ubuntu</code></pre>
 
 <p>6.更新</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">apt-get update</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">apt-get update</code></pre>
 
 <p>5.下载 .net6</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">apt-get install dotnet-sdk-6.0</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">apt-get install dotnet-sdk-6.0</code></pre>
 
 <p>6.新建储存文件夹(文件夹名称随意)</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">mkdir TShock </code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">mkdir TShock </code></pre>
 
 <p>7.进入文件夹(文件夹名称以TShock为例)</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">cd TShock</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">cd TShock</code></pre>
 
 <p>8.下载TShock</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">wget https:&#x2F;&#x2F;github.com&#x2F;Pryaxis&#x2F;TShock&#x2F;releases&#x2F;download&#x2F;v5.2.0&#x2F;TShock-5.2-for-Terraria-1.4.4.9-linux-arm64-Release.zip</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">wget https:&#x2F;&#x2F;github.com&#x2F;Pryaxis&#x2F;TShock&#x2F;releases&#x2F;download&#x2F;v5.2.0&#x2F;TShock-5.2-for-Terraria-1.4.4.9-linux-arm64-Release.zip</code></pre>
 
 <p>9.解压TShock(不同版本名称不一样，输入ls来获取zip文件名称)</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">unzip TShock-5.2-for-Terraria-1.4.4.9-linux-arm64-Release.zip</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">unzip TShock-5.2-for-Terraria-1.4.4.9-linux-arm64-Release.zip</code></pre>
 
 <p>解压完后会有一个tar文件，同样输入ls来获取tar文件名称</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">tar -xvf TShock-Beta-linux-x64-Release.tar</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">tar -xvf TShock-Beta-linux-x64-Release.tar</code></pre>
 
 <p>10.运行tshock(默认端口7777)</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">.&#x2F;TShock.Server</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">.&#x2F;TShock.Server</code></pre>
 
 <p>中文</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">.&#x2F;TShock.Server -lang 7</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">.&#x2F;TShock.Server -lang 7</code></pre>
 
 <p>11.关闭服务器<br>按ctrl+c，并按下回车键<br>(ps：创建世界什么的自己百度(^￫ᴥ￩^))</p>
 
@@ -420,7 +420,7 @@ TShock安装启动以TShock-5.2-for-Terraria-1.4.4.9为例使用泰拉瑞亚1.4"
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsishsjsj.pages.dev/blog/24780.html">https://jsishsjsj.pages.dev/blog/24780.html</a>
+                    <a href="https://jsishsjsj.github.io/blog/24780.html">https://jsishsjsj.github.io/blog/24780.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -983,7 +983,7 @@ $(function () {
         <script type="text/javascript">
           var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
           var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-          var cookieDomain = "https://jsishsjsj.pages.dev"; //Cookie地址, 一定要设定, 通常为你的网址
+          var cookieDomain = "https://jsishsjsj.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
           var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
           var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
           var translateButtonId = "translateLink"; //默认互换id

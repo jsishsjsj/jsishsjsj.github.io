@@ -363,7 +363,7 @@ npm">
                 <h1 id="一、博客框架"><a href="#一、博客框架" class="headerlink" title="一、博客框架"></a>一、博客框架</h1><p>博客框架为<a target="_blank" rel="noopener" href="https://hexo.bootcss.com/">hexo</a> </p>
 <hr>
 <h1 id="二、搭建"><a href="#二、搭建" class="headerlink" title="二、搭建"></a>二、搭建</h1><p>1.打开termux输入↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg i nodejs -y
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg i nodejs -y
 
 pkg i git -y
 
@@ -384,15 +384,15 @@ hexo s</code></pre>
 <p>仓库名称为你的github账户名.github.io</p>
 <p>3.安装配置ssh</p>
 <p>安装↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">pkg install openssh -y</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">pkg install openssh -y</code></pre>
 
 <p>配置↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">git config --global user.name &quot;你的github账户名&quot;
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">git config --global user.name &quot;你的github账户名&quot;
 
 git config --global user.email &quot;你注册github时的邮箱&quot;</code></pre>
 
 <p>4.创建ssh</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">ssh-keygen -t rsa -C &quot;你注册github时的邮箱&quot;</code></pre>
 
 <p>输入完成后连按三次回车键</p>
 <p>5.在github上创建密钥并连接</p>
@@ -403,32 +403,32 @@ git config --global user.email &quot;你注册github时的邮箱&quot;</code></p
 
 <p>在key填ssh的密钥</p>
 <p>ssh密钥获取↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">cat &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;.ssh&#x2F;id_rsa.pub</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">cat &#x2F;data&#x2F;data&#x2F;com.termux&#x2F;files&#x2F;home&#x2F;.ssh&#x2F;id_rsa.pub</code></pre>
 
 <p>复制出现的内容到key处，然后点击Add SHH Key</p>
 <p>返回termux检查是否成功输入↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">ssh -T git@github.com</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">ssh -T git@github.com</code></pre>
 
 <p>注：如出现yes或no问题，填yes即可</p>
 <p>出现↓</p>
 <p><code>Hi username You&#39;ve successfully authenticated, but GitHub does not provide shell access.</code><br>即为成功</p>
 <p>在blog目录下找到_config.yml,翻到最后，修改为↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">deploy:
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">deploy:
  type: git
  repo: git@github.com:你的github用户名&#x2F;你的github账户名.github.io.git
  branch: master  </code></pre>
 
 <hr>
 <h1 id="四、完成推送"><a href="#四、完成推送" class="headerlink" title="四、完成推送"></a>四、完成推送</h1><p>1.安装插件↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">npm install hexo-deployer-git --save</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">npm install hexo-deployer-git --save</code></pre>
 
 <p>2.推送命令↓</p>
-<pre class="language-yaml" data-language="yaml"><code class="language-yaml">hexo clean &amp;&amp; hexo deploy</code></pre>
+<pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">hexo clean &amp;&amp; hexo deploy</code></pre>
 
 <p>3.访问地址↓</p>
 <p><code>https://你的github账户名.github.io</code>  </p>
 <hr>
-<h1 id="五、常见命令"><a href="#五、常见命令" class="headerlink" title="五、常见命令"></a>五、常见命令</h1><pre class="language-yaml" data-language="yaml"><code class="language-yaml">hexo help  #帮助
+<h1 id="五、常见命令"><a href="#五、常见命令" class="headerlink" title="五、常见命令"></a>五、常见命令</h1><pre class="line-numbers language-yaml" data-language="yaml"><code class="language-yaml">hexo help  #帮助
 
 hexo clean  #清除缓存和已生成的静态文件
 
@@ -469,7 +469,7 @@ hexo g -d  #生成页面并部署</code></pre>
                     </i>
                 </span>
                 <span class="reprint-info">
-                    <a href="https://jsishsjsj.pages.dev/blog/62898.html">https://jsishsjsj.pages.dev/blog/62898.html</a>
+                    <a href="https://jsishsjsj.github.io/blog/62898.html">https://jsishsjsj.github.io/blog/62898.html</a>
                 </span>
             </div>
             <div class="reprint__notice">
@@ -1033,7 +1033,7 @@ $(function () {
         <script type="text/javascript">
           var defaultEncoding = 2; //网站编写字体是否繁体，1-繁体，2-简体
           var translateDelay = 0; //延迟时间,若不在前, 要设定延迟翻译时间, 如100表示100ms,默认为0
-          var cookieDomain = "https://jsishsjsj.pages.dev"; //Cookie地址, 一定要设定, 通常为你的网址
+          var cookieDomain = "https://jsishsjsj.github.io"; //Cookie地址, 一定要设定, 通常为你的网址
           var msgToTraditionalChinese = "繁"; //此处可以更改为你想要显示的文字
           var msgToSimplifiedChinese = "简"; //同上，但两处均不建议更改
           var translateButtonId = "translateLink"; //默认互换id
