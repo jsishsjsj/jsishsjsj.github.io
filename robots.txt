@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /music/
+Disallow: /categories/
+Disallow: /about/
+Disallow: /archives/
+Disallow: /archives/2025/03/
+Disallow: /comments/
