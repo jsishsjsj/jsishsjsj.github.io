@@ -2,6 +2,24 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.jsishsjsj.top/recentcomment/index.html</loc>
+    
+    <lastmod>2025-07-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jsishsjsj.top/message/index.html</loc>
+    
+    <lastmod>2025-07-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jsishsjsj.top/posts/d390.html.html</loc>
     
     <lastmod>2025-07-25</lastmod>
@@ -66,15 +84,6 @@
   
   <url>
     <loc>https://blog.jsishsjsj.top/music/index.html</loc>
-    
-    <lastmod>2025-02-20</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/comments/index.html</loc>
     
     <lastmod>2025-02-20</lastmod>
     
