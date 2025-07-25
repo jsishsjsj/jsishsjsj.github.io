@@ -2,15 +2,6 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
-    <loc>https://blog.jsishsjsj.top/message/index.html</loc>
-    
-    <lastmod>2025-07-25</lastmod>
-    
-    <changefreq>monthly</changefreq>
-    <priority>0.6</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.jsishsjsj.top/posts/d390.html.html</loc>
     
     <lastmod>2025-07-25</lastmod>
@@ -21,6 +12,15 @@
   
   <url>
     <loc>https://blog.jsishsjsj.top/posts/806a.html.html</loc>
+    
+    <lastmod>2025-07-25</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jsishsjsj.top/message/index.html</loc>
     
     <lastmod>2025-07-25</lastmod>
     
@@ -99,56 +99,7 @@
   </url>
   
   <url>
-    <loc>https://blog.jsishsjsj.top/tags/16%E5%B2%81%E5%8A%9E%E5%8D%A1/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/%E6%9C%AA%E6%88%90%E5%B9%B4%E4%BA%BA%E5%82%A8%E8%93%84%E5%8D%A1/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/%E5%8A%9E%E5%8D%A1%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/%E5%AD%A6%E7%94%9F%E5%8A%9E%E5%8D%A1/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
     <loc>https://blog.jsishsjsj.top/tags/%E6%89%8B%E5%8A%9E/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/DIGIGIRL%E6%89%8B%E5%8A%9E/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/%E9%AB%98%E8%B7%9F%E9%9E%8B%E6%A3%92%E6%A3%92%E7%B3%96%E6%89%8B%E5%8A%9E/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/1-6%E6%89%8B%E5%8A%9E%E6%B5%8B%E8%AF%84/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
@@ -163,55 +114,6 @@
   
   <url>
     <loc>https://blog.jsishsjsj.top/tags/%E5%9B%BE%E5%BA%8A/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/%E5%85%8D%E8%B4%B9%E5%9B%BE%E5%BA%8A%E6%90%AD%E5%BB%BA/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/GitHub%E5%9B%BE%E5%BA%8A%E6%95%99%E7%A8%8B/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/Cloudflare%E5%9B%BE%E5%BA%8A%E9%83%A8%E7%BD%B2/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/Telegram%E5%9B%BE%E5%BA%8A%E5%B7%A5%E5%85%B7/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/unicode/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/%E5%BE%AE%E4%BF%A1%E6%98%B5%E7%A7%B0%E7%89%B9%E6%AE%8A%E5%90%8E%E7%BC%80/</loc>
-    <lastmod>2025-07-25</lastmod>
-    <changefreq>weekly</changefreq>
-    <priority>0.2</priority>
-  </url>
-  
-  <url>
-    <loc>https://blog.jsishsjsj.top/tags/QQ%E7%BE%A4%E5%90%8D%E7%89%B9%E6%95%88/</loc>
     <lastmod>2025-07-25</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>
