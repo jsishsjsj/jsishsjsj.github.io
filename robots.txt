@@ -1,5 +1,5 @@
 User-agent: *
-Disallow: /music/
+Disallow: /music/?id=9445868445&server=tencent
 Disallow: /categories/
 Disallow: /about/
 Disallow: /archives/
