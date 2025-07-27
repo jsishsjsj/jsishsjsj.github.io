@@ -2,6 +2,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>https://blog.jsishsjsj.top/posts/d363.html.html</loc>
+    
+    <lastmod>2025-07-27</lastmod>
+    
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+  
+  <url>
     <loc>https://blog.jsishsjsj.top/posts/80fb.html.html</loc>
     
     <lastmod>2025-07-27</lastmod>
@@ -135,6 +144,13 @@
     <priority>0.2</priority>
   </url>
   
+  <url>
+    <loc>https://blog.jsishsjsj.top/tags/Follow%E8%AE%A4%E8%AF%81%E6%95%99%E7%A8%8B/</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
 
   
   <url>
@@ -146,6 +162,13 @@
   
   <url>
     <loc>https://blog.jsishsjsj.top/categories/%E6%9D%82%E8%B0%88/</loc>
+    <lastmod>2025-07-27</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.2</priority>
+  </url>
+  
+  <url>
+    <loc>https://blog.jsishsjsj.top/categories/%E6%95%99%E7%A8%8B-Hexo/</loc>
     <lastmod>2025-07-27</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.2</priority>

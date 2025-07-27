@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>为Hexo博客添加Follow认证：提升曝光率的详细教程</title>
+      <link href="/posts/d363.html.html"/>
+      <url>/posts/d363.html.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><p><a href="https://app.follow.is/">folo</a>是一款实用的信息聚合工具网页版，支持聚合博客、新闻等多平台内容，自带自动翻译、摘要、AI推荐等智能功能，还能通过关注、打赏等社交互动提升内容传播，适配多设备使用，是博主拓展内容影响力的好帮手。</p><h1 id="Follow认证的作用"><a href="#Follow认证的作用" class="headerlink" title="Follow认证的作用"></a>Follow认证的作用</h1><p><strong>提升博客和内容曝光率的有效方式。</strong><br>通过Follow认证，你的Hexo博客内容能在Follow.is平台获得更高权重，被更多用户（尤其是关注同类内容的用户）发现，同时认证标识也会增强读者对博客权威性的认可，间接提升内容点击和互动率。</p><h2 id="正文"><a href="#正文" class="headerlink" title="正文"></a>正文</h2><h3 id="一、安装必要插件"><a href="#一、安装必要插件" class="headerlink" title="一、安装必要插件"></a>一、安装必要插件</h3><p><em>安装插件的前提是你已拥有Hexo博客</em></p><ol><li>安装RSS插件<br>运行以下命令安装Hexo的RSS生成插件，用于后续认证时的内容校验：</li></ol><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">npm install hexo-generator-feed --save</span><br></pre></td></tr></table></figure><ol start="2"><li>生成RSS文件<br>安装完成后，执行部署命令：</li></ol><figure class="highlight plaintext"><table><tr><td class="code"><pre><span class="line">hexo g &amp;&amp; hexo d</span><br><span class="line">```  </span><br><span class="line"></span><br><span class="line">部署成功后，在博客的`public`目录下会生成`atom.xml`文件（这是后续认证的关键文件，需妥善保存路径）。</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">### 二、完成Follow认证步骤</span><br><span class="line">1. 注册并添加博客到Follow.is  </span><br><span class="line">   - 访问[Follow.is官网](https://app.follow.is)注册账号  </span><br><span class="line">   - 在平台内添加你的博客RSS地址（通常为`你的博客域名/atom.xml`）  </span><br><span class="line"></span><br><span class="line">2. 选择RSS标签认证方式  </span><br><span class="line">   - 在Follow.is左侧栏找到你的博客，右键点击并选择“认证”  </span><br><span class="line">   - 在三种认证方式中，选择**第三种：rss标签认证**，复制系统生成的认证代码</span><br><span class="line">   </span><br><span class="line">3. 嵌入认证代码到RSS文件  </span><br><span class="line">   - 找到博客`public`目录下的`atom.xml`文件，用编辑器打开  </span><br><span class="line">   - 将复制的认证代码粘贴到文件内任意位置</span><br><span class="line"></span><br><span class="line">4. 重新部署并完成认证  </span><br><span class="line">   - 执行部署命令更新博客：  </span><br><span class="line">   </span><br></pre></td></tr></table></figure><p>   hexo d</p><pre><code>- 回到Follow.is认证页面，点击“验证”，显示成功即完成认证。**完成这些步骤后，恭喜你成功为Hexo博客添加了Follow认证！从此你的内容将在Follow.is平台获得更多曝光机会~**</code></pre>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程, Hexo </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> Follow认证教程 </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>AstroBox评测：2025小米Vela穿戴设备免费工具箱推荐（官网+优缺点对比）</title>
       <link href="/posts/80fb.html.html"/>
       <url>/posts/80fb.html.html</url>
