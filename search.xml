@@ -4,6 +4,31 @@
   
     
     <entry>
+      <title>2025手把手教你给cloudflare pages&amp;worker提速！</title>
+      <link href="/posts/66bb.html.html"/>
+      <url>/posts/66bb.html.html</url>
+      
+        <content type="html"><![CDATA[<link rel="stylesheet" class="aplayer-secondary-style-marker" href="/assets/css/APlayer.min.css"><script src="/assets/js/APlayer.min.js" class="aplayer-secondary-script-marker"></script><h1 id="前言"><a href="#前言" class="headerlink" title="前言"></a>前言</h1><p>CloudFlare 凭借覆盖全球的边缘网络，在网站加速、DDoS 防护等领域口碑显著。但由于其国内节点不对免费用户开放，国内用户常面临访问卡顿问题。其实，通过筛选面向国内线路的优质节点 IP 并进行针对性设置，就能强制连接优质节点，大幅提升使用体验。本文将详细讲解各类 CloudFlare 服务的优选配置方法，帮你轻松解决访问难题。</p><h2 id="准备工作"><a href="#准备工作" class="headerlink" title="准备工作"></a>准备工作</h2><ul><li><strong>域名</strong>：至少准备两个域名，用于后续解析设置（一个在 CloudFlare 解析，一个在其他平台解析）。</li><li><strong>账号</strong>：注册并登录 CloudFlare 账号。</li><li><strong>支付方式</strong>：准备 VISA 信用卡或 PayPal 账号（仅用于部分功能激活，未超出免费额度时不会扣费）。</li></ul><h2 id="CDN-优选配置"><a href="#CDN-优选配置" class="headerlink" title="CDN 优选配置"></a>CDN 优选配置</h2><h3 id="原理"><a href="#原理" class="headerlink" title="原理"></a>原理</h3><p>CloudFlare 支持 SaaS 模式接入 CDN，类似传统的 CNAME 接入方式，核心是通过两个域名配合完成解析与回源设置。</p><h3 id="配置步骤"><a href="#配置步骤" class="headerlink" title="配置步骤"></a>配置步骤</h3><ol><li>区分域名用途：一个域名在 CloudFlare 进行解析（例如 <code>cf-cdn.jsishsjsj.com</code>，用于回源）；另一个域名在非 CloudFlare 平台解析（例如 <code>blog.jsishsjsj.top</code>，作为实际访问域名）。</li><li>配置回源域名：在 CloudFlare 后台进入 <code>DNS</code> - <code>记录</code>，添加 <code>cf-cdn.jsishsjsj.com</code>，将其解析到服务器 IP 并开启代理（点击小云朵图标）。</li><li>设置回退源：进入 CloudFlare 的 <code>SSL/TLS</code> - <code>自定义主机名</code>，点击 <code>添加回退源</code>，输入已配置的回源域名 <code>cf-cdn.jsishsjsj.com</code>。</li><li>绑定访问域名：在 <code>自定义主机名</code> 中添加实际访问域名 <code>blog.jsishsjsj.top</code>，根据需求选择合适的 TLS 版本、证书类型等参数；按页面提示，在该域名的 DNS 服务商处添加 TXT 记录（用于证书申请和域名认证）和 CNAME&#x2F;A 记录（用于网站访问）。</li><li>切换优选节点：待 CloudFlare 页面显示“有效”后，将 DNS 解析中的 CNAME&#x2F;A 记录修改为筛选出的优选 IP&#x2F;域名，完成配置。</li></ol><h2 id="Workers-优选配置"><a href="#Workers-优选配置" class="headerlink" title="Workers 优选配置"></a>Workers 优选配置</h2><h3 id="原理-1"><a href="#原理-1" class="headerlink" title="原理"></a>原理</h3><p>借助 Workers 路由功能，将原本指向 CloudFlare 节点的流量引导至 Workers 进行处理，从而实现对节点的优化选择。</p><h3 id="配置步骤-1"><a href="#配置步骤-1" class="headerlink" title="配置步骤"></a>配置步骤</h3><ol><li>部署 Workers 项目：确保 CloudFlare Workers 已部署完成（例如 <code>workers.jsishsjsj.com</code>）。</li><li>配置路由规则：不使用 Workers 自带的“添加自定义域”功能，选择“添加路由”，在地址栏填写最终访问地址并加上 <code>/*</code>（例如 <code>workers.jsishsjsj.com/*</code>），同时选择对应的区域。</li><li>指向优选 IP：在 DNS 记录中，将 <code>workers.jsishsjsj.com</code> 指向筛选出的优选 IP，代理状态设置为“仅 DNS”。</li></ol><h2 id="Page-优选配置"><a href="#Page-优选配置" class="headerlink" title="Page 优选配置"></a>Page 优选配置</h2><h3 id="原理-2"><a href="#原理-2" class="headerlink" title="原理"></a>原理</h3><p>与 CDN 优选 IP 原理相似，区别在于 CloudFlare 会为 Page 项目提供专门的 CNAME 回源域名，需基于该域名完成解析配置。</p><h3 id="配置步骤-2"><a href="#配置步骤-2" class="headerlink" title="配置步骤"></a>配置步骤</h3><ol><li>部署 Page 项目：正常完成 CloudFlare Page 项目的部署。</li><li>绑定自定义域：在项目页面点击 <code>自定义域</code> - <code>设置自定义域</code>，输入最终访问域名（例如 <code>blog.jsishsjsj.top</code>）。</li><li>配置初始解析：根据页面提示，在域名对应的 DNS 服务商处配置 CNAME 记录（指向 CloudFlare 提供的回源域名），然后点击 <code>激活域</code>（注意：不要将该域名托管到 CloudFlare）。</li><li>切换优选节点：确认配置生效且证书已成功下发后，手动将 DNS 解析修改为优选 IP&#x2F;域名。</li></ol><h2 id="国内外分流设置"><a href="#国内外分流设置" class="headerlink" title="国内外分流设置"></a>国内外分流设置</h2><p>国内外分流的核心是让不同地区的 IP 走不同线路：中国大陆 IP 走国内 CDN 或优选域名，境外 IP 走 <code>.pages.dev</code> 原生线路，提升不同地区的访问效率。</p><p>配置步骤：</p><ol><li>为访问域名添加 CNAME 解析，将其指向 CDN 域名或 CloudFlare 优选域名。</li><li>在解析平台的路线设置中，将该解析线路指定为“中国大陆”；同时，将原本的 <code>.pages.dev</code> 域名解析线路设置为“境外”，实现分流。</li></ol><h2 id="注意事项"><a href="#注意事项" class="headerlink" title="注意事项"></a>注意事项</h2><ul><li>若添加的自定义主机名为中文域名，需先将其转码为 punycode 格式后再进行配置。</li><li>若遇到 CloudFlare 前端验证不通过的情况，可尝试通过抓包替换请求的方式直接调用 API 强制添加。</li></ul>]]></content>
+      
+      
+      <categories>
+          
+          <category> 教程 </category>
+          
+      </categories>
+      
+      
+        <tags>
+            
+            <tag> cloudflare </tag>
+            
+        </tags>
+      
+    </entry>
+    
+    
+    
+    <entry>
       <title>为Hexo博客添加Follow认证：提升曝光率的详细教程</title>
       <link href="/posts/d363.html.html"/>
       <url>/posts/d363.html.html</url>

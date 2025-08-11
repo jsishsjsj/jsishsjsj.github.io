@@ -6,7 +6,7 @@
   <link href="https://blog.jsishsjsj.top/atom.xml" rel="self"/>
   
   <link href="https://blog.jsishsjsj.top/"/>
-  <updated>2025-07-27T06:28:46.420Z</updated>
+  <updated>2025-08-11T22:36:35.106Z</updated>
   <id>https://blog.jsishsjsj.top/</id>
   
   <author>
@@ -15,6 +15,28 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>2025手把手教你给cloudflare pages&amp;worker提速！</title>
+    <link href="https://blog.jsishsjsj.top/posts/66bb.html.html"/>
+    <id>https://blog.jsishsjsj.top/posts/66bb.html.html</id>
+    <published>2025-08-11T16:00:00.000Z</published>
+    <updated>2025-08-11T22:36:35.106Z</updated>
+    
+    
+      
+      
+    <summary type="html">&lt;link rel=&quot;stylesheet&quot; class=&quot;aplayer-secondary-style-marker&quot; href=&quot;/assets/css/APlayer.min.css&quot;&gt;&lt;script src=&quot;/assets/js/APlayer.min.js&quot; cla</summary>
+      
+    
+    
+    
+    <category term="教程" scheme="https://blog.jsishsjsj.top/categories/%E6%95%99%E7%A8%8B/"/>
+    
+    
+    <category term="cloudflare" scheme="https://blog.jsishsjsj.top/tags/cloudflare/"/>
+    
+  </entry>
   
   <entry>
     <title>为Hexo博客添加Follow认证：提升曝光率的详细教程</title>
